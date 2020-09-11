@@ -11,3 +11,7 @@ export const globalStyles = css`
 export const Container = styled.div`
   ${tw``}
 `;
+
+export const Link = styled.a`
+  ${tw`text-blue-500 hover:text-red-500`}
+`;
