@@ -4,7 +4,7 @@ import tw from 'twin.macro';
 
 export const globalStyles = css`
   body {
-    ${tw`antialiased text-gray-900 flex flex-col justify-center items-center h-screen`}
+    ${tw`antialiased text-gray-900 h-screen`}
   }
 `;
 

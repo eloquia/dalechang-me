@@ -64,9 +64,7 @@ const EducationRole = (props: EducationRoleProps) => {
       </ul>
       <p>{props.roleDescription}</p>
       <p>Responsibilities</p>
-      <ul>
-        <li>{responsibilities}</li>
-      </ul>
+      <ul>{responsibilities}</ul>
     </section>
   );
 };

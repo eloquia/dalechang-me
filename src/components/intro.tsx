@@ -1,29 +1,13 @@
 import React from 'react';
-
-import styled from '@emotion/styled';
-import tw from 'twin.macro';
-
-const Title = styled.h1`
-  ${tw`text-4xl mb-2`}
-`;
-
-const Subtitle = styled.h2`
-  ${tw`text-3xl`}
-`;
-
-const Paragraph = styled.p`
-  ${tw`text-xl mb-8`}
-`;
+import { h1Style, h2Style, articleStyle } from './styles';
 
 function Intro(): JSX.Element {
   return (
-    <div className="intro">
-      <Title>Hi, my name is Dale Chang</Title>
-      <Subtitle>I solve problems using software</Subtitle>
-      <Paragraph>
-        From an idea to a design to tangible results, I make it all happen.
-      </Paragraph>
-    </div>
+    <article className="intro" css={articleStyle}>
+      <h1 css={h1Style}>Hi, my name is Dale Chang</h1>
+      <h2 css={h2Style}>I solve problems using software</h2>
+      <p>From an idea to a design to tangible results, I make it all happen.</p>
+    </article>
   );
 }
 
