@@ -82,7 +82,7 @@ const EducationRole = (props: EducationRoleProps) => {
 
 function Education(): JSX.Element {
   return (
-    <article className="education" css={educationStyle}>
+    <article className="education" css={educationStyle} id="education">
       <h1 css={h1Style}>Education</h1>
       <div>
         <h2 css={h2Style}>Bachelor in Physics</h2>

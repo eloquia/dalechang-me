@@ -14,7 +14,7 @@ const paragraphStyle = css`
 
 function WorkHistories(): JSX.Element {
   return (
-    <article className="work" css={workStyle}>
+    <article className="work" css={workStyle} id="work">
       <h1 css={h1Style}>Work</h1>
 
       <p css={paragraphStyle}>I do it</p>

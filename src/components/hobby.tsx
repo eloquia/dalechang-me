@@ -49,7 +49,7 @@ function Hobbies(): JSX.Element {
   const springProps = useSpring({ opacity: 1, from: { opacity: 0 } });
 
   return (
-    <article className="hobbies" css={hobbyStyle}>
+    <article className="hobbies" css={hobbyStyle} id="hobbies">
       <h1 css={h1Style}>Hobbies</h1>
 
       {hobbies.map(hobbyData => (

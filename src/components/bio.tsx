@@ -36,7 +36,7 @@ function Bio(): JSX.Element {
   const interests: string[] = data.site.siteMetadata.currentTechnologies;
 
   return (
-    <article className="bio" css={bioStyle}>
+    <article className="bio" css={bioStyle} id="bio">
       <h1 css={h1Style}>Bio</h1>
 
       <p css={paragraphStyle}>

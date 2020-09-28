@@ -47,42 +47,30 @@ function IndexPage(): JSX.Element {
   return (
     <>
       <Global styles={globalStyles} />
-      <BrowserRouter>
-        <nav id="nav" css={navBackgroundStyle}>
-          <ul css={navStyle}>
-            {site.siteMetadata.menuLinks.map(link => (
-              <li
-                key={link.name}
-                style={{
-                  listStyleType: `none`,
-                  padding: `1rem`
-                }}
-              >
-                <Link style={{ color: `gray` }} to={link.link}>
-                  {link.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
+      <nav id="nav" css={navBackgroundStyle}>
+        <ul css={navStyle}>
+          {site.siteMetadata.menuLinks.map(link => (
+            <li
+              key={link.name}
+              style={{
+                listStyleType: `none`,
+                padding: `1rem`
+              }}
+            >
+              <Link style={{ color: `gray` }} to={link.link}>
+                {link.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
 
-        <Switch>
-          <Route path="#bio">
-            <Bio />
-          </Route>
-          <Route path="#work">
-            <WorkHistories />
-          </Route>
-          <Route path="education">
-            <Education />
-          </Route>
-          <Route path="#hobbies">
-            <Hobbies />
-          </Route>
-        </Switch>
-        <SEO title="A Look At" />
-        <Intro />
-      </BrowserRouter>
+      <SEO title="A Look At" />
+      <Intro />
+      <Bio />
+      <WorkHistories />
+      <Education />
+      <Hobbies />
       <footer css={footerStyle}>
         © {new Date().getFullYear()}{' '}
         <a css={linkStyle} href="https://eloquia.io">
