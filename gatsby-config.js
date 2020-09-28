@@ -2,7 +2,38 @@ module.exports = {
   siteMetadata: {
     title: `Dale Chang`,
     description: `Personal and Portfolio Website for Dale Chang`,
-    author: `@eloquia`
+    author: `@eloquia`,
+    menuLinks: [
+      {
+        name: 'home',
+        link: '/'
+      },
+      {
+        name: 'bio',
+        link: '/#bio'
+      },
+      {
+        name: 'work',
+        link: '/#work'
+      },
+      {
+        name: 'education',
+        link: '/#education'
+      },
+      {
+        name: 'hobbies',
+        link: '/#hobbies'
+      }
+    ],
+    currentTechnologies: [
+      'Angular',
+      'NodeJS',
+      'Terraform',
+      'AWS API Gateway',
+      'AWS Lambda',
+      'Gatsby'
+    ],
+    experienceStart: 2016
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -29,6 +60,7 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-typescript`,
-    `gatsby-plugin-emotion`
+    `gatsby-plugin-emotion`,
+    `gatsby-plugin-anchor-links`
   ]
 };

@@ -3,11 +3,17 @@
   "private": true,
   "description": "Website for Dale Chang",
   "version": "1.0.0",
-  "author": "Dale Chang <dalecb13@gmail.com>",
+  "author": "Dale Chang <dale@eloquia.io>",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
+    "@fortawesome/free-regular-svg-icons": "^5.14.0",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/react-fontawesome": "^0.1.11",
     "babel-plugin-styled-components": "^1.10.7",
     "gatsby": "^2.19.45",
     "gatsby-image": "^2.2.44",
+    "gatsby-plugin-anchor-links": "^1.1.1",
     "gatsby-plugin-manifest": "^2.2.48",
     "gatsby-plugin-offline": "^3.0.41",
     "gatsby-plugin-react-helmet": "^3.1.24",
@@ -19,17 +25,32 @@
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "react-interactive": "^0.9.2",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-router-hash-link": "^2.1.0",
+    "react-spring": "^8.0.27"
   },
   "devDependencies": {
+    "@babel/core": "^7.11.6",
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
+    "@storybook/addon-actions": "^6.0.21",
+    "@storybook/addon-essentials": "^6.0.21",
+    "@storybook/addon-links": "^6.0.21",
+    "@storybook/react": "^6.0.21",
     "@types/node": "^13.11.0",
     "@types/react": "^16.9.32",
     "@types/react-helmet": "^5.0.15",
+    "@types/react-router": "^5.1.8",
+    "@types/react-router-dom": "^5.1.5",
+    "@types/react-router-hash-link": "^1.2.1",
     "@types/styled-components": "^5.0.1",
     "@typescript-eslint/eslint-plugin": "^2.26.0",
     "@typescript-eslint/parser": "^2.26.0",
+    "babel-loader": "^8.1.0",
+    "babel-preset-react-app": "^9.1.2",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-config-node": "^4.0.0",
@@ -42,7 +63,8 @@
     "eslint-plugin-react-hooks": "^2.5.0",
     "gatsby-plugin-emotion": "^4.2.1",
     "prettier": "^1.19.1",
-    "tailwindcss": "^1.2.0",
+    "react-is": "^16.13.1",
+    "tailwindcss": "^1.8.10",
     "twin.macro": "^1.0.0-alpha.8",
     "typescript": "^3.8.3"
   },
@@ -57,16 +79,18 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/eloquia/dale-chang-me"
   },
   "engines": {
     "node": ">=12.0.0 "
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/eloquia/dale-chang-me/issues"
   }
 }

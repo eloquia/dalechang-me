@@ -1,6 +1,17 @@
 /* eslint-disable react/destructuring-assignment */
 import React from 'react';
-import { articleStyle, h1Style, h2Style, h3Style } from './styles';
+import { css } from '@emotion/core';
+import tw from 'twin.macro';
+
+import { h1Style, h2Style, h3Style } from './styles';
+
+const educationStyle = css`
+  ${tw`my-32 px-64`}
+`;
+
+const educationRoleStyle = css`
+  ${tw`mt-4 mb-8`}
+`;
 
 interface EducationRoleProps {
   id: number;
@@ -48,7 +59,7 @@ const EducationRole = (props: EducationRoleProps) => {
   ));
 
   return (
-    <section className="education-role">
+    <section className="education-role" css={educationRoleStyle}>
       <h3 css={h3Style}>{props.roleName}</h3>
       <ul>
         <li>
@@ -71,7 +82,7 @@ const EducationRole = (props: EducationRoleProps) => {
 
 function Education(): JSX.Element {
   return (
-    <article className="education" css={articleStyle}>
+    <article className="education" css={educationStyle}>
       <h1 css={h1Style}>Education</h1>
       <div>
         <h2 css={h2Style}>Bachelor in Physics</h2>

@@ -8,7 +8,7 @@ const notFoundStyle = css`
   ${tw`p-64`}
 `;
 
-export default function NotFound() {
+function NotFound(): JSX.Element {
   return (
     <Layout>
       <article css={notFoundStyle}>
@@ -18,3 +18,5 @@ export default function NotFound() {
     </Layout>
   );
 }
+
+export default NotFound;

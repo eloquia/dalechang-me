@@ -1,12 +1,18 @@
 import React from 'react';
-import { h1Style, h2Style, articleStyle } from './styles';
+import { css } from '@emotion/core';
+import tw from 'twin.macro';
+
+import { h1Style, h2Style } from './styles';
+
+const introStyle = css`
+  ${tw`p-64`}
+`;
 
 function Intro(): JSX.Element {
   return (
-    <article className="intro" css={articleStyle}>
+    <article className="intro" css={introStyle}>
       <h1 css={h1Style}>Hi, my name is Dale Chang</h1>
-      <h2 css={h2Style}>I solve problems using software</h2>
-      <p>From an idea to a design to tangible results, I make it all happen.</p>
+      <h2 css={h2Style}>I solve problems with software</h2>
     </article>
   );
 }

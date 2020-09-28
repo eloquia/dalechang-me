@@ -20,13 +20,3 @@ export const h2Style = css`
 export const h3Style = css`
   ${tw`text-xl`}
 `;
-
-/*
-  Section Style
-
-  This style is applied to HTML section tags which describe an
-  aggregation of similar content
-*/
-export const articleStyle = css`
-  ${tw`p-12`}
-`;
