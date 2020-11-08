@@ -15,6 +15,7 @@ function NotFound(): JSX.Element {
         <h1>Page Not Found</h1>
         <p>Oops, we could not find the page you are looking for!</p>
       </article>
+      <div></div>
     </Layout>
   );
 }

@@ -4,5 +4,7 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
-// You can delete this file if you're not using it
-import 'tailwindcss/dist/base.css';
+import 'tailwindcss/dist/base.min.css';
+import "./src/styles/globals.css"
+
+export const onServiceWorkerUpdateReady = () => window.location.reload(true);

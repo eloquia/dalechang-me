@@ -1,0 +1,5 @@
+@tailwind base;
+
+main {
+  display: flex;
+}

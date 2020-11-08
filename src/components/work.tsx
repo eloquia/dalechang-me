@@ -5,7 +5,7 @@ import tw from 'twin.macro';
 import { h1Style } from './styles';
 
 const workStyle = css`
-  ${tw`my-16 px-64`}
+  ${tw``}
 `;
 
 const paragraphStyle = css`

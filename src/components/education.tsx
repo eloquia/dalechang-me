@@ -6,7 +6,7 @@ import tw from 'twin.macro';
 import { h1Style, h2Style, h3Style } from './styles';
 
 const educationStyle = css`
-  ${tw`my-32 px-64`}
+  ${tw`my-32`}
 `;
 
 const educationRoleStyle = css`

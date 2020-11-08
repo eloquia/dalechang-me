@@ -1,60 +1,50 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import { css, Global } from '@emotion/core';
-import tw from 'twin.macro';
+import { Global } from '@emotion/core';
+import tw, { css } from 'twin.macro';
+import { ThemeProvider } from 'styled-components';
 
-import Navigation from './common/navigation';
-import { linkStyle } from './styles';
+import Header from './header';
 
-import { globalStyles, Container } from './layoutStyles';
+import Theme from '../styles/Theme';
+import { globalStyles, linkStyle } from './styles';
 
-const mainContentStyle = css`
-  ${tw`flex flex-row static`}
-`;
+/*
+  Layout has primary content on the left with a sidebar for navigation on the right
+*/
 
 const footerStyle = css`
   ${tw``}
 `;
 
-type Props = { children: JSX.Element[] };
+const contentContainerStyles = css`
+  ${tw`flex flex-row-reverse`}
+`;
 
-function Layout({ children }: Props): JSX.Element {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            menuLinks {
-              name
-              link
-            }
-          }
-        }
-      }
-    `
-  );
+const mainStyles = css`
+  ${tw`flex flex-col`}
+`;
 
+export type LayoutProps = { children: JSX.Element[], location: any };
+
+export default function Layout(layoutProps : LayoutProps): JSX.Element {
   return (
     <>
       <Global styles={globalStyles} />
-      <Container>
-        <div className="main-content" css={mainContentStyle}>
-          <main>{children}</main>
-          <Navigation
-            menuLinks={site.siteMetadata.menuLinks}
-            siteTitle={site.siteMetadata.title}
-          />
+      <ThemeProvider theme={Theme}>
+        <div id="content-container" css={contentContainerStyles}>
+          <Header location={layoutProps.location} />
+
+          <main css={mainStyles}>
+            {layoutProps.children}
+            <footer css={footerStyle}>
+              © {new Date().getFullYear()}{' '}
+              <a css={linkStyle} target="_blank" rel="noreferrer" href="https://eloquia.io">
+                Eloquia
+              </a>
+            </footer>
+          </main>
         </div>
-        <footer css={footerStyle}>
-          © {new Date().getFullYear()}{' '}
-          <a css={linkStyle} href="https://eloquia.io">
-            Eloquia
-          </a>
-        </footer>
-      </Container>
+      </ThemeProvider>
     </>
   );
 }
-
-export default Layout;

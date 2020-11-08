@@ -1,6 +1,8 @@
 import { css } from '@emotion/core';
 import tw from 'twin.macro';
 
+export const globalStyles = css``;
+
 /*
   Common styles used through the project
 */

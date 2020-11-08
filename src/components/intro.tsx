@@ -5,7 +5,7 @@ import tw from 'twin.macro';
 import { h1Style, h2Style } from './styles';
 
 const introStyle = css`
-  ${tw`p-64`}
+  ${tw``}
 `;
 
 function Intro(): JSX.Element {

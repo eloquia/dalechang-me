@@ -6,7 +6,7 @@ import tw from 'twin.macro';
 import { h1Style } from './styles';
 
 const bioStyle = css`
-  ${tw`my-32 px-64`}
+  ${tw``}
 `;
 
 const paragraphStyle = css`

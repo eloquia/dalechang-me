@@ -61,6 +61,18 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-emotion`,
-    `gatsby-plugin-anchor-links`
+    `gatsby-plugin-anchor-links`,
+    {
+      resolve: 'gatsby-plugin-layout',
+      options: {
+        component: require.resolve('./src/components/layout.tsx'),
+      },
+    },
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        // Accepts all options defined by `gatsby-plugin-postcss` plugin.
+      },
+    },
   ]
 };

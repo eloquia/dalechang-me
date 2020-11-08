@@ -14,7 +14,7 @@ import {
 } from './hobbyStyles';
 
 const hobbyStyle = css`
-  ${tw`my-32 px-64`}
+  ${tw``}
 `;
 
 interface HobbyProps {
