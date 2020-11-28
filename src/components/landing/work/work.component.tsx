@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { css } from '@emotion/core';
 import tw from 'twin.macro';
+import styled from 'styled-components';
 
 // eslint-disable-next-line no-unused-vars
 import { WorkData } from '../../../models/work.model';
@@ -85,8 +86,36 @@ const workData: WorkData[] = [
   }
 ];
 
-const workContainerStyles = css`
+const WorkContainer = styled.div`
   ${tw`flex flex-row`}
+
+  @media (max-width: ${props => props.theme.sizes.mobile}) {
+    flex-direction: column;
+  }
+`;
+
+const WorkControls = styled.ul`
+  .active {
+    color: red;
+  }
+
+  @media (max-width: ${props => props.theme.sizes.mobile}) {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    li {
+      float: left;
+      button {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+      }
+    }
+  }
 `;
 
 const Work = () => {
@@ -115,15 +144,15 @@ const Work = () => {
     <Section className="work-section" id="work">
       <H1>Work</H1>
 
-      <div id="work-container" css={workContainerStyles}>
+      <WorkContainer>
         <div id="role-list">
-          <ul>
+          <WorkControls>
             {rolesAndIds.map(roleAndId => {
               return <li key={roleAndId.id}>
                 <button onClick={() => handleClick(roleAndId.id)} key={roleAndId.id} type="button">{roleAndId.role}</button>
               </li>
             })}
-          </ul>
+          </WorkControls>
         </div>
 
         <WorkItem
@@ -139,7 +168,7 @@ const Work = () => {
             workItems={currentWork.workItems}
             takeaway={currentWork.takeaway}
           />
-      </div>
+      </WorkContainer>
     </Section>
   );
 }

@@ -53,6 +53,6 @@ export const Section = styled.section`
   ${tw`p-4`}
 
   @media (max-width: ${props => props.theme.sizes.mobile}) {
-    ${tw`py-24`}
+    ${tw`pt-24`}
   }
 `;
