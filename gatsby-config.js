@@ -1,17 +1,56 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Tailwind Styled Components Typescript Eslint starter`,
-    description: `Starter project that includes typescript, eslint (airbnb), tailwind css and @emotion/styled for styling`,
-    author: `@miloshinjio`,
+    title: `Dale Chang`,
+    description: `Personal and Portfolio Website for Dale Chang`,
+    author: `@eloquia`,
+    menuLinks: [
+      {
+        name: 'home',
+        link: '/'
+      },
+      {
+        name: 'bio',
+        link: '/#bio'
+      },
+      {
+        name: 'work',
+        link: '/#work'
+      },
+      {
+        name: 'education',
+        link: '/#education'
+      },
+      {
+        name: 'hobbies',
+        link: '/#hobbies'
+      }
+    ],
+    currentTechnologies: [
+      'Angular',
+      'NodeJS',
+      'Terraform',
+      'AWS API Gateway',
+      'AWS Lambda',
+      'Gatsby'
+    ],
+    experienceStart: 2016
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-breakpoints`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
-      },
+        path: `${__dirname}/src/images`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data`,
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -24,11 +63,25 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#ffffff`,
         display: `minimal-ui`,
-        icon: `src/images/logo.png`,
-      },
+        icon: `src/images/logo.png`
+      }
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-emotion`,
-  ],
+    `gatsby-plugin-anchor-links`,
+    {
+      resolve: 'gatsby-plugin-layout',
+      options: {
+        component: require.resolve('./src/components/layout.tsx'),
+      },
+    },
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        // Accepts all options defined by `gatsby-plugin-postcss` plugin.
+      },
+    },
+    `gatsby-transformer-json`,
+  ]
 };

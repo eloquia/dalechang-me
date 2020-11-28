@@ -1,0 +1,70 @@
+[
+  {
+    "stackPartName": "Front-end",
+    "children": [
+      {
+        "technologyName": "Angular 2+",
+        "image": ""
+      },
+      {
+        "technologyName": "React",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "stackPartName": "Middleware/REST API",
+    "children": [
+      {
+        "technologyName": "NodeJS",
+        "image": ""
+      },
+      {
+        "technologyName": "Python",
+        "image": ""
+      },
+      {
+        "technologyName": "Golang",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "stackPartName": "Infrastructure",
+    "children": [
+      {
+        "technologyName": "Terraform",
+        "image": ""
+      },
+      {
+        "technologyName": "Docker",
+        "image": ""
+      },
+      {
+        "technologyName": "Jenkins",
+        "image": ""
+      },
+      {
+        "technologyName": "Kubernetes",
+        "image": ""
+      },
+      {
+        "technologyName": "AWS",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "stackPartName": "Machine Learning",
+    "children": [
+      {
+        "technologyName": "PyTorch",
+        "image": ""
+      },
+      {
+        "technologyName": "Spark",
+        "image": ""
+      }
+    ]
+  }
+]

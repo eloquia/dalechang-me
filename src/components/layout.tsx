@@ -1,27 +1,44 @@
 import React from 'react';
 import { Global } from '@emotion/core';
+import styled, { ThemeProvider } from 'styled-components';
 
-import { linkStyle } from './styles';
+import Header from './common/header';
+import Footer from './common/footer';
+import Theme from '../styles/Theme';
+import { globalStyles } from './styles';
 
-import { globalStyles, Container } from './layoutStyles';
+/*
+  Layout has primary content on the left with a sidebar for navigation on the right
+*/
 
-type Props = { children: JSX.Element[] };
+const ContentContainer = styled.div`
+  display: flex;
 
-function Layout({ children }: Props): JSX.Element {
+  @media (max-width: ${props => props.theme.sizes.mobile}) {
+    flex-direction: column;
+  }
+`;
+
+const Main = styled.main`
+  display: flex;
+  flex-diretion: column;
+`;
+
+export type LayoutProps = { children: JSX.Element[], location: any };
+
+export default function Layout(layoutProps : LayoutProps): JSX.Element {
   return (
     <>
       <Global styles={globalStyles} />
-      <Container>
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}{' '}
-          <a css={linkStyle} href="https://eloquia.io">
-            Eloquia
-          </a>
-        </footer>
-      </Container>
+      <ThemeProvider theme={Theme}>
+        <ContentContainer id="content-container">
+          <Main>
+            {layoutProps.children}
+            <Footer />
+          </Main>
+          <Header location={layoutProps.location} />
+        </ContentContainer>
+      </ThemeProvider>
     </>
   );
 }
-
-export default Layout;

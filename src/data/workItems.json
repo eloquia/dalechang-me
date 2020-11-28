@@ -1,0 +1,76 @@
+{
+ "workHistory": [
+    {
+      "id": "lorem-ipsum",
+      "companyName": "Lorem Ipsum",
+      "client": "Amet Dolor",
+      "roleName": "Consectetur Adipiscing",
+      "dateStarted": "Oct 2019",
+      "dateEnded": "Present",
+      "location": "Suspendisse ut",
+      "description": "Sed sollicitudin accumsan metus vitae ultrices. Praesent lectus neque, convallis pellentesque laoreet eu, efficitur nec ex. Proin elementum eget ante ut aliquam. Quisque vel ex lorem. Duis vulputate vel libero vitae scelerisque. Nulla nunc velit, pretium at luctus a, dictum sit amet nisi. Nam laoreet semper justo vel varius. Mauris tortor augue, pulvinar vel neque nec, cursus faucibus odio. Quisque massa eros, tristique nec auctor sed, rhoncus et mi. Vivamus rutrum ut lorem sed dictum.",
+      "workItems": [
+        "Fusce in sem eu arcu blandit pharetra.",
+        "Integer ac efficitur ante.",
+        "Quisque at mauris arcu."
+      ],
+      "takeaway": "Proin tortor urna, aliquam at sagittis ac, suscipit sit amet augue. Quisque malesuada dapibus felis et tempor. Aliquam quis eros id dui pellentesque mollis."
+    },
+   {
+    "id": "eloquia",
+     "companyName": "Eloquia",
+     "client": "",
+     "roleName": "Founder",
+     "dateStarted": "Oct 2019",
+     "dateEnded": "Present",
+     "location": "In the Cloud",
+     "description": "",
+     "workItems": [
+       ""
+     ],
+     "takeaway": ""
+   },
+   {
+    "id": "cigna",
+    "companyName": "Cigna",
+    "client": "Internal",
+    "roleName": "Senior Software Engineering Advisor",
+    "dateStarted": "Feb 2019",
+    "dateEnded": "Present",
+    "location": "Denver, CO, USA",
+    "description": "",
+    "workItems": [
+      ""
+    ],
+    "takeaway": ""
+  },
+  {
+    "id": "caads",
+    "companyName": "Leidos",
+    "client": "CAADS",
+    "roleName": "Data Integration Engineer",
+    "dateStarted": "April 2018",
+    "dateEnded": "Jan 2019",
+    "location": "Gaithersburg, MD, USA",
+    "description": "Collaborative Advanced Analytics & Data Sharing (CAADS) is a data lake and self-service + guided platform targeted to help federal health-focused agencies identify trends in their data. Users can upload their structured (tabular) and unstructured (electronic document) data into an instance of cloud federated CAADS. Afterward either the client or a CAADS data scientist can leverage existing analytics tools or design new workflows to suit their needs.",
+    "workItems": [
+      ""
+    ],
+    "takeaway": ""
+  },
+  {
+    "id": "doj",
+    "companyName": "Leidos",
+    "client": "Department of Justice",
+    "roleName": "Text Analytics and Software Analyst",
+    "dateStarted": "Feb 2016",
+    "dateEnded": "March 2018",
+    "location": "Washington DC, USA",
+    "description": "Collaborative Open Base for Review and Analytics (COBRA) is a big data, on premise open source platform for legal review and e-discovery. Federal agencies with non-existent litigation budgets use the platform to upload, organize, and identify documents with pertinent evidence for court matters.",
+    "workItems": [
+      ""
+    ],
+    "takeaway": ""
+  }
+ ]
+}

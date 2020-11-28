@@ -1,24 +1,29 @@
 import React from 'react';
+import { Global } from '@emotion/core';
 
-import Layout from '../components/layout';
+import SEO from '../components/common/seo';
+import Intro from '../components/landing/intro';
+import Bio from '../components/landing/bio';
+import Work from '../components/landing/work/work.component';
+// import Clients from '../components/landing/clients';
+// import Hobbies from '../components/landing/hobby';
 
-import SEO from '../components/seo';
-import Intro from '../components/intro';
-import Bio from '../components/bio';
-import Projects from '../components/projects';
-import Education from '../components/education';
-import Hobbies from '../components/hobby';
+import { globalStyles } from '../components/styles';
 
+/*
+  The home page of the web application.
+*/
 function IndexPage(): JSX.Element {
   return (
-    <Layout>
-      <SEO title="Home" />
+    <>
+      <Global styles={globalStyles} />
+      <SEO title="Multi-faceted Software Engineer" />
       <Intro />
       <Bio />
-      <Projects />
-      <Education />
-      <Hobbies />
-    </Layout>
+      <Work />
+      {/* <Clients /> */}
+      {/* <Hobbies /> */}
+    </>
   );
 }
 
