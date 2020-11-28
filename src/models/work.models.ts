@@ -14,8 +14,14 @@ export interface WorkData {
   takeaway?: string;
 }
 
+export interface WorkControlsArray {
+  id: string;
+  displayText: string;
+  isActive: boolean;
+}
+
 export interface WorkControlsModel {
-  displayTexts: {displayText: string, id: string, isActive: boolean}[];
+  workControlsArray: WorkControlsArray[];
   handleWorkChange: (id: string) => void;
 }
 

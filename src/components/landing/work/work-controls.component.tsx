@@ -18,19 +18,17 @@ const WorkControlsElement = styled.div`
  * Work controls only need the `displayText` passed into it
  */
 const WorkControls = (props: WorkControlsModel) => {
-  const { displayTexts, handleWorkChange } = props;
+  const { workControlsArray, handleWorkChange } = props;
   return (
     <WorkControlsElement>
-      {displayTexts.map(displayTextItem => {
+      {workControlsArray.map(workControlData => {
         return <WorkControl
-            key={displayTextItem.id}
-            id={displayTextItem.id}
-            isActive={displayTextItem.isActive}
+            key={workControlData.id}
+            id={workControlData.id}
+            isActive={workControlData.isActive}
             handleWorkChange={handleWorkChange}
-            displayText={displayTextItem.displayText}
-        >
-          {displayTextItem}
-        </WorkControl>
+            displayText={workControlData.displayText}
+        />
       })}
     </WorkControlsElement>
   );

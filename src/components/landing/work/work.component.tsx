@@ -3,7 +3,7 @@ import tw from 'twin.macro';
 import styled from 'styled-components';
 
 // eslint-disable-next-line no-unused-vars
-import { WorkData } from '../../../models/work.models';
+import { WorkControlsArray, WorkData } from '../../../models/work.models';
 import WorkItem from './work-item.component';
 
 import { Section, H1 } from '../../styles';
@@ -101,27 +101,28 @@ const WorkContainer = styled.div`
  */
 const Work = () => {
   const [currentWork, setCurrentWork] = useState<WorkData>(workData[0]);
-
-  /**
-   * Updates which work data to display.
-   * Also 
-   */
-
-  const rolesAndIds: {displayText: string, id: string, isActive: boolean}[] = workData.map((workItem: WorkData, index: number) => {
+  const [workControlsArray, setWorkControlsArray] = useState<WorkControlsArray[]>(workData.map((datum: WorkData, index: number) => {
     return {
-      displayText: workItem.companyName,
-      id: workItem.id,
+      displayText: datum.companyName,
+      id: datum.id,
       isActive: index === 0,
     }
-  });
+  }));
 
   const handleWorkChange = (id: string) => {
-    console.log('HANDLE CHANGE', id);
-    // change data displayed
+    // find selected work
     const focusedWork: WorkData = workData.filter(datum => datum.id === id)[0];
+    // change active tab
+    const updatedWorkControls: WorkControlsArray[] = workData.map(workDatum => {
+      return {
+        id: workDatum.id,
+        displayText: workDatum.companyName,
+        isActive: workDatum.id === id,
+      }
+    });
+    setWorkControlsArray(updatedWorkControls);
+    // change data displayed
     setCurrentWork(focusedWork);
-
-    // change which work control is active
   };
 
   return (
@@ -129,7 +130,10 @@ const Work = () => {
       <H1>Work</H1>
 
       <WorkContainer>
-        <WorkControls displayTexts={rolesAndIds} handleWorkChange={handleWorkChange}/>
+        <WorkControls
+            workControlsArray={workControlsArray}
+            handleWorkChange={handleWorkChange}
+        />
 
         <WorkItem
             key={currentWork.id}

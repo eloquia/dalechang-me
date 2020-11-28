@@ -22,10 +22,10 @@ const WorkControlElement = styled('button')<{isActive: boolean}>`
  * 
  */
 const WorkControl = (props: WorkControlModel) => {
-  const { id, key, displayText, isActive, handleWorkChange } = props;
+  const { id, displayText, isActive, handleWorkChange } = props;
 
   return (
-    <WorkControlElement key={key} isActive={isActive} onClick={() => handleWorkChange(id)}>{displayText}</WorkControlElement>
+    <WorkControlElement isActive={isActive} onClick={() => handleWorkChange(id)}>{displayText}</WorkControlElement>
   );
 };
 
