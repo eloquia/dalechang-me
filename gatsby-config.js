@@ -37,11 +37,19 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-breakpoints`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data`,
       }
     },
     `gatsby-transformer-sharp`,
@@ -74,5 +82,6 @@ module.exports = {
         // Accepts all options defined by `gatsby-plugin-postcss` plugin.
       },
     },
+    `gatsby-transformer-json`,
   ]
 };

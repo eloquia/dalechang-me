@@ -1,6 +1,6 @@
 module.exports = {
   twin: {
-      preset: 'emotion',
+      preset: 'twin.macro',
       config: './tailwind.config.js',
   }
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { hobbies } from '../hobby';
+import { hobbies } from '../landing/hobby';
 
 export default {
   title: 'Dashboard/hobbies'
