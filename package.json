@@ -48,10 +48,6 @@
     "@babel/core": "^7.12.3",
     "@emotion/core": "^10.1.1",
     "@emotion/styled": "^10.0.27",
-    "@storybook/addon-actions": "^6.0.28",
-    "@storybook/addon-essentials": "^6.0.28",
-    "@storybook/addon-links": "^6.0.28",
-    "@storybook/react": "^6.0.28",
     "@types/node": "^13.13.30",
     "@types/react": "^16.9.56",
     "@types/react-helmet": "^5.0.16",
@@ -94,9 +90,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "repository": {
     "type": "git",
