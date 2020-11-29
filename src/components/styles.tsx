@@ -34,7 +34,7 @@ export const UL = styled.ul`
 
 
 export const Article = styled.article`
-  ${tw`flex flex-col min-h-screen justify-center w-screen`}
+  ${tw`flex flex-col min-h-screen w-auto justify-center`}
 
   @media (min-width: ${props => props.theme.sizes.tablet}) {
 
@@ -50,7 +50,7 @@ export const Article = styled.article`
  * Describes the common styles for a general "section" on the Landing Page
  */
 export const Section = styled.section`
-  ${tw`p-4`}
+  ${tw`p-4 w-auto`}
 
   @media (max-width: ${props => props.theme.sizes.mobile}) {
     ${tw`pt-24`}

@@ -5,7 +5,7 @@ import { linkStyle } from '../styles';
 import { GitHub } from '../external/github';
 
 const footerStyle = css`
-  ${tw`flex flex-row justify-between p-4 w-full bg-black text-white`}
+  ${tw`flex flex-row justify-between p-4 bg-black text-white`}
 `;
 
 export default function Footer() {

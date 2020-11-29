@@ -9,7 +9,7 @@ import tw from 'twin.macro';
 import { Article, H1, H2 } from '../styles';
 
 const containerStyle = css`
-  ${tw`flex flex-row w-screen`}
+  ${tw`flex flex-row`}
 `;
 
 const imageContainerStyle = css`

@@ -6,7 +6,7 @@ import tw from 'twin.macro';
 import { Section, H1, UL } from '../styles';
 
 const paragraphStyle = css`
-  ${tw`mb-4 text-justify`}
+  ${tw`mb-4 text-justify max-w-4xl`}
 `;
 
 function Bio(): JSX.Element {

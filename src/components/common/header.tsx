@@ -15,16 +15,14 @@ import styled from 'styled-components';
 */
 
 const HeaderWrapper = styled('nav')`
-  position: fixed;
   width: 120px;
-  height: 100%;
   background-color: transparent;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   transition: height 0.3s ease;
+
+  ${tw`flex flex-col place-content-center justify-items-center h-screen`}
+
   .nav-d {
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,7 +40,6 @@ const HeaderWrapper = styled('nav')`
 `;
 
 export default function Header(): JSX.Element {
-
   function renderLinks() {
     return (
       <>
@@ -56,10 +53,7 @@ export default function Header(): JSX.Element {
 
   return (
     <HeaderWrapper>
-      <div id="route-container">
-        <div className="nav-d">{renderLinks()}</div>
-      </div>
+      <div className="nav-d">{renderLinks()}</div>
     </HeaderWrapper>
   );
-
 }

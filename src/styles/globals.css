@@ -1,13 +1,1 @@
 @tailwind base;
-
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#content-container {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-}
