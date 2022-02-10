@@ -1,5 +1,5 @@
 import React from 'react';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import tw from 'twin.macro';
 
 const notFoundStyle = css`

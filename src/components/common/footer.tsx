@@ -1,28 +1,39 @@
 import React from 'react';
-import tw, { css } from 'twin.macro';
+import tw from 'twin.macro';
+import styled from 'styled-components';
 
 import { linkStyle } from '../styles';
 import { GitHub } from '../external/github';
+import ExternalLink from './externalLink';
 
-const footerStyle = css`
-  ${tw`flex flex-row justify-between p-4 w-full bg-black text-white`}
+const Footy = styled.footer`
+  ${tw`flex flex-row justify-center items-center p-4 bg-black text-white w-screen`}
+`;
+
+const FooterContent = styled.div`
+  ${tw`flex flex-row justify-between sm:w-full md:w-full lg:w-full xl:w-full`}
+`;
+
+const FooterSection = styled.div`
+  ${tw`flex flex-row gap-1`}
 `;
 
 export default function Footer() {
   return (
-    <footer css={footerStyle}>
-      <div className="footer-section-left">
-        © {new Date().getFullYear()}{' '}
-        <a css={linkStyle} target="_blank" rel="noreferrer" href="https://eloquia.io">
-          Eloquia
-        </a>
-      </div>
+    <Footy>
+      <FooterContent>
+        <FooterSection>
+          <span>© {new Date().getFullYear()}</span>
+          <ExternalLink href="https://eloquia.io" displayText="Eloquia" />
+        </FooterSection>
 
-      <div className="footer-section-right">
-        <a css={linkStyle} target="_blank" rel="noreferrer" href="https://github.com/eloquia/dalechang-me/">
-          <GitHub />
-        </a>
-      </div>
-    </footer>
+        <FooterSection>
+          <span>Built with <ExternalLink href="https://gatsbyjs.com" displayText="Gatsby" /></span>
+          <a target="_blank" rel="noreferrer" href="https://github.com/eloquia/dalechang-me/">
+            <GitHub />
+          </a>
+        </FooterSection>
+      </FooterContent>
+    </Footy>
   )
 }

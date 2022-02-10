@@ -1,14 +1,14 @@
 import React from 'react';
-import { Global } from '@emotion/core';
 
 import SEO from '../components/common/seo';
 import Intro from '../components/landing/intro';
-import Bio from '../components/landing/bio';
+import About from '../components/landing/about';
 import Work from '../components/landing/work/work.component';
-// import Clients from '../components/landing/clients';
-// import Hobbies from '../components/landing/hobby';
+import Stack from '../components/landing/stack';
+import Interests from '../components/landing/interests/interests';
 
-import { globalStyles } from '../components/styles';
+import '../styles/globals.css';
+import CurrentStack from '../components/landing/work/stack/current-stack.component';
 
 /*
   The home page of the web application.
@@ -16,13 +16,13 @@ import { globalStyles } from '../components/styles';
 function IndexPage(): JSX.Element {
   return (
     <>
-      <Global styles={globalStyles} />
       <SEO title="Multi-faceted Software Engineer" />
+
       <Intro />
-      <Bio />
+      <About />
       <Work />
-      {/* <Clients /> */}
-      {/* <Hobbies /> */}
+      <CurrentStack />
+      <Interests />
     </>
   );
 }

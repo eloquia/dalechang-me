@@ -1,12 +1,12 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import tw from 'twin.macro';
 
-import { Section, H1, UL } from '../styles';
+import { Section, H1 } from '../styles';
 
 const paragraphStyle = css`
-  ${tw`mb-4 text-justify`}
+  ${tw`mb-4 text-justify max-w-4xl`}
 `;
 
 function Bio(): JSX.Element {
@@ -15,7 +15,6 @@ function Bio(): JSX.Element {
       site {
         siteMetadata {
           experienceStart
-          currentTechnologies
         }
       }
     }
@@ -48,15 +47,15 @@ function Bio(): JSX.Element {
 
       <p css={paragraphStyle}>
         In the wild, you will always find Dale in one the following scenarios:
-         with his MacBook, building and enhancing
+        with his MacBook, building and enhancing
         his clients&apos; applications
       </p>
 
-      <UL>
+      <ul>
         <li>At a cafe with his MacBook, enhancing a clients&apos; or his own application</li>
         <li>Biking around the city exploring new locations</li>
         <li>Camping with a leave-no-trace mentality</li>
-      </UL>
+      </ul>
     </Section>
   );
 }

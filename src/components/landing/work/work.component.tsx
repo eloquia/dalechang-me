@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import { css } from '@emotion/core';
 import tw from 'twin.macro';
+import styled from 'styled-components';
 
 // eslint-disable-next-line no-unused-vars
-import { WorkData } from '../../../models/work.model';
+import { WorkControlsArray, WorkData } from '../../../models/work.models';
 import WorkItem from './work-item.component';
 
 import { Section, H1 } from '../../styles';
+import WorkControls from './work-controls.component';
 
 /*
   This component contains all of the work history. Each segment of work
@@ -85,61 +86,65 @@ const workData: WorkData[] = [
   }
 ];
 
-const workContainerStyles = css`
-  ${tw`flex flex-row`}
+const WorkContainer = styled.div`
+  ${tw`flex flex-col`}
 `;
 
+/**
+ * Overall component for the Work section in the Landing Page.
+ * Hydrates its child components and negotiates which work to display depending
+ * on which button was clicked
+ */
 const Work = () => {
-
-  /*
-    Initial state is to use the data from 
-  */
-
   const [currentWork, setCurrentWork] = useState<WorkData>(workData[0]);
-
-  const handleClick = (id: string) => {
-    // search within the query for the corresponding WorkData
-    const selectedWorkData: WorkData = workData.filter((workDatum: WorkData) => workDatum.id === id)[0];
-
-    setCurrentWork(selectedWorkData);
-  }
-
-  const rolesAndIds: {role: string, id: string}[] = workData.map((workItem: WorkData) => {
+  const [workControlsArray, setWorkControlsArray] = useState<WorkControlsArray[]>(workData.map((datum: WorkData, index: number) => {
     return {
-      role: workItem.companyName,
-      id: workItem.id
+      displayText: datum.companyName,
+      id: datum.id,
+      isActive: index === 0,
     }
-  });
+  }));
+
+  const handleWorkChange = (id: string) => {
+    // find selected work
+    const focusedWork: WorkData = workData.filter(datum => datum.id === id)[0];
+    // change active tab
+    const updatedWorkControls: WorkControlsArray[] = workData.map(workDatum => {
+      return {
+        id: workDatum.id,
+        displayText: workDatum.companyName,
+        isActive: workDatum.id === id,
+      }
+    });
+    setWorkControlsArray(updatedWorkControls);
+    // change data displayed
+    setCurrentWork(focusedWork);
+  };
 
   return (
     <Section className="work-section" id="work">
       <H1>Work</H1>
 
-      <div id="work-container" css={workContainerStyles}>
-        <div id="role-list">
-          <ul>
-            {rolesAndIds.map(roleAndId => {
-              return <li key={roleAndId.id}>
-                <button onClick={() => handleClick(roleAndId.id)} key={roleAndId.id} type="button">{roleAndId.role}</button>
-              </li>
-            })}
-          </ul>
-        </div>
+      <WorkContainer>
+        <WorkControls
+          workControlsArray={workControlsArray}
+          handleWorkChange={handleWorkChange}
+        />
 
         <WorkItem
-            key={currentWork.id}
-            id={currentWork.id}
-            roleName={currentWork.roleName}
-            companyName={currentWork.companyName}
-            client={currentWork.client}
-            dateStarted={currentWork.dateStarted}
-            dateEnded={currentWork.dateEnded}
-            location={currentWork.location}
-            description={currentWork.description}
-            workItems={currentWork.workItems}
-            takeaway={currentWork.takeaway}
-          />
-      </div>
+          key={currentWork.id}
+          id={currentWork.id}
+          roleName={currentWork.roleName}
+          companyName={currentWork.companyName}
+          client={currentWork.client}
+          dateStarted={currentWork.dateStarted}
+          dateEnded={currentWork.dateEnded}
+          location={currentWork.location}
+          description={currentWork.description}
+          workItems={currentWork.workItems}
+          takeaway={currentWork.takeaway}
+        />
+      </WorkContainer>
     </Section>
   );
 }

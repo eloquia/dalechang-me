@@ -1,44 +1,31 @@
 import React from 'react';
-import { Global } from '@emotion/core';
-import styled, { ThemeProvider } from 'styled-components';
+import tw from 'twin.macro';
+import styled from 'styled-components';
+import { Global } from '@emotion/react';
 
-import Header from './common/header';
-import Footer from './common/footer';
-import Theme from '../styles/Theme';
 import { globalStyles } from './styles';
+import Footer from './common/footer';
+import Header from './common/header';
 
 /*
   Layout has primary content on the left with a sidebar for navigation on the right
 */
 
-const ContentContainer = styled.div`
-  display: flex;
-
-  @media (max-width: ${props => props.theme.sizes.mobile}) {
-    flex-direction: column;
-  }
-`;
-
 const Main = styled.main`
-  display: flex;
-  flex-diretion: column;
+  ${tw`flex flex-col justify-center items-center`}
 `;
 
-export type LayoutProps = { children: JSX.Element[], location: any };
+export type LayoutProps = { children: JSX.Element[] };
 
-export default function Layout(layoutProps : LayoutProps): JSX.Element {
+export default function Layout(layoutProps: LayoutProps): JSX.Element {
   return (
     <>
       <Global styles={globalStyles} />
-      <ThemeProvider theme={Theme}>
-        <ContentContainer id="content-container">
-          <Main>
-            {layoutProps.children}
-            <Footer />
-          </Main>
-          <Header location={layoutProps.location} />
-        </ContentContainer>
-      </ThemeProvider>
+      <Header />
+      <Main>
+        {layoutProps.children}
+      </Main>
+      <Footer />
     </>
   );
 }

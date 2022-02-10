@@ -1,0 +1,16 @@
+{
+  "interests": [
+    {
+      "id": 1,
+      "name": "Cooking",
+      "description": "Cooking is one of my most favorite hobbies because it's a perfect way to blend my constructive and creative capabilities. Once you've learned the building blocks, it's easy to compose a healthy, flavorful meal. It also gives me great pleasure to host large, friendly gatherings. Similar to my personality and strengths, I'd much prefer to be behind the scenes making sure everything goes smoothly.",
+      "img": "karahi"
+    },
+    {
+      "id": 0,
+      "name": "Bouldering",
+      "description": "Bouldering is similar to rock climbing except: there are no ropes; the heights are lower; climbing to the top requires significant effort. In fact, there is so much effort involved that the communities call the act of climbing to the top as \"solving the problem.\" Climbing to the top is like playing a strategic board game with your body as the main piece and the wall as the board game. On any given boulder problem, I have to have the strength of a gymnast, the flexibility of a yogi, and the cognitive fortitude of a chess player.",
+      "img": "bouldering"
+    }
+  ]
+}

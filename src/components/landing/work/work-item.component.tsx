@@ -1,17 +1,24 @@
+import React from 'react';
+import tw from 'twin.macro';
+import styled from 'styled-components';
+
 // eslint-disable-next-line no-unused-vars
-import { UL } from '../../styles';
-import { WorkData } from "../../../models/work.model";
+import { WorkData } from "../../../models/work.models";
+
+const WorkElement = styled.div`
+  ${tw`pl-8`}
+`;
 
 const WorkItem = ( workData: WorkData ) => {
   return (
-    <div className="work-item" style={{marginLeft: "1rem"}}>
+    <WorkElement className="work-item">
       <p><span>{workData.roleName}</span> @ <span>{workData.companyName}</span></p>
       <p><span>{workData.dateStarted} - {workData.dateEnded}</span></p>
       <p><span>{workData.location}</span></p>
-      <UL>
+      <ul>
         {workData.workItems.map((workItem: string) => <li key={workItem}>{workItem}</li>)}
-      </UL>
-    </div>
+      </ul>
+    </WorkElement>
   );
 }
 
