@@ -29,7 +29,7 @@ export default function Footer() {
 
         <FooterSection>
           <span>Built with <ExternalLink href="https://gatsbyjs.com" displayText="Gatsby" /></span>
-          <a css={linkStyle} target="_blank" rel="noreferrer" href="https://github.com/eloquia/dalechang-me/">
+          <a target="_blank" rel="noreferrer" href="https://github.com/eloquia/dalechang-me/">
             <GitHub />
           </a>
         </FooterSection>

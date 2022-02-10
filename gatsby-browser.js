@@ -6,5 +6,6 @@
 
 // import 'tailwindcss/dist/base.min.css';
 import "./src/styles/globals.css"
+import "@fontsource/open-sans" // Defaults to weight 400 with all styles included.
 
 export const onServiceWorkerUpdateReady = () => window.location.reload(true);

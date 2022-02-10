@@ -1,3 +1,60 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*
+  Global Styles
+*/
+body {
+  font-family: "Roboto";
+}
+
+/*
+  Logo
+*/
+/* .logo-container {
+  margin: .5rem;
+} */
+
+/*
+  Header
+*/
+header {
+  padding: .5rem;
+}
+
+/*
+  Intro Section
+*/
+#intro h1 {
+  font-size: 48px;
+}
+#intro h2 {
+  font-size: 24px;
+}
+#intro-text {
+  height: 100%;
+  color: #FFF;
+  text-align: right;
+  padding-right: 1rem;
+}
+
+/*
+  About Section
+*/
+#about {
+  display: flex;
+  flex-direction: column-reverse;
+  @media (min-width: 640px) {
+    flex-direction: row;
+  }
+}
+#about h2 {
+  font-size: 24px;
+}
+#about div {
+  padding: 2rem;
+}
+#about div p {
+  padding: 1rem 0;
+}
