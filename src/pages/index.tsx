@@ -8,6 +8,7 @@ import Stack from '../components/landing/stack';
 import Interests from '../components/landing/interests/interests';
 
 import '../styles/globals.css';
+import CurrentStack from '../components/landing/work/stack/current-stack.component';
 
 /*
   The home page of the web application.
@@ -20,7 +21,7 @@ function IndexPage(): JSX.Element {
       <Intro />
       <About />
       <Work />
-      <Stack />
+      <CurrentStack />
       <Interests />
     </>
   );

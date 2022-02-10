@@ -1,7 +1,7 @@
 import React from 'react';
 import tw from 'twin.macro';
 import styled from 'styled-components';
-import { Global } from '@emotion/core';
+import { Global } from '@emotion/react';
 
 import { globalStyles } from './styles';
 import Footer from './common/footer';
@@ -16,10 +16,10 @@ const Main = styled.main`
 
 export type LayoutProps = { children: JSX.Element[] };
 
-export default function Layout(layoutProps : LayoutProps): JSX.Element {
+export default function Layout(layoutProps: LayoutProps): JSX.Element {
   return (
     <>
-      <Global styles={globalStyles}/>
+      <Global styles={globalStyles} />
       <Main>
         {layoutProps.children}
       </Main>

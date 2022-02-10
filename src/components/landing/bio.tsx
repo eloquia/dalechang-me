@@ -1,6 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import tw from 'twin.macro';
 
 import { Section, H1 } from '../styles';
@@ -47,7 +47,7 @@ function Bio(): JSX.Element {
 
       <p css={paragraphStyle}>
         In the wild, you will always find Dale in one the following scenarios:
-         with his MacBook, building and enhancing
+        with his MacBook, building and enhancing
         his clients&apos; applications
       </p>
 

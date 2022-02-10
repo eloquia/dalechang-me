@@ -28,6 +28,7 @@ module.exports = {
     experienceStart: 2016
   },
   plugins: [
+    `gatsby-plugin-image`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-breakpoints`,
     `gatsby-transformer-json`,
@@ -81,7 +82,6 @@ module.exports = {
         plugins: [],
       },
     },
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,

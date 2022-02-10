@@ -8,7 +8,6 @@ import WorkItem from './work-item.component';
 
 import { Section, H1 } from '../../styles';
 import WorkControls from './work-controls.component';
-import CurrentStack from './stack/current-stack.component';
 
 /*
   This component contains all of the work history. Each segment of work
@@ -128,22 +127,22 @@ const Work = () => {
 
       <WorkContainer>
         <WorkControls
-            workControlsArray={workControlsArray}
-            handleWorkChange={handleWorkChange}
+          workControlsArray={workControlsArray}
+          handleWorkChange={handleWorkChange}
         />
 
         <WorkItem
-            key={currentWork.id}
-            id={currentWork.id}
-            roleName={currentWork.roleName}
-            companyName={currentWork.companyName}
-            client={currentWork.client}
-            dateStarted={currentWork.dateStarted}
-            dateEnded={currentWork.dateEnded}
-            location={currentWork.location}
-            description={currentWork.description}
-            workItems={currentWork.workItems}
-            takeaway={currentWork.takeaway}
+          key={currentWork.id}
+          id={currentWork.id}
+          roleName={currentWork.roleName}
+          companyName={currentWork.companyName}
+          client={currentWork.client}
+          dateStarted={currentWork.dateStarted}
+          dateEnded={currentWork.dateEnded}
+          location={currentWork.location}
+          description={currentWork.description}
+          workItems={currentWork.workItems}
+          takeaway={currentWork.takeaway}
         />
       </WorkContainer>
     </Section>
