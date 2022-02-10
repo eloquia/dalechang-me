@@ -8,10 +8,6 @@ import { WorkControlsModel } from '../../../models/work.models';
 
 const WorkControlsElement = styled.div`
   ${tw`flex flex-col place-items-start`}
-  @media (max-width: ${props => props.theme.sizes.mobile}) {
-    overflow: hidden;
-    ${tw`flex-row m-0 p-0`}
-  }
 `;
 
 /**

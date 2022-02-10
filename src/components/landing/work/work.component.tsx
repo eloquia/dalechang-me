@@ -8,6 +8,7 @@ import WorkItem from './work-item.component';
 
 import { Section, H1 } from '../../styles';
 import WorkControls from './work-controls.component';
+import CurrentStack from './stack/current-stack.component';
 
 /*
   This component contains all of the work history. Each segment of work
@@ -87,11 +88,7 @@ const workData: WorkData[] = [
 ];
 
 const WorkContainer = styled.div`
-  ${tw`flex flex-row`}
-
-  @media (max-width: ${props => props.theme.sizes.mobile}) {
-    flex-direction: column;
-  }
+  ${tw`flex flex-col`}
 `;
 
 /**
@@ -147,7 +144,7 @@ const Work = () => {
             description={currentWork.description}
             workItems={currentWork.workItems}
             takeaway={currentWork.takeaway}
-          />
+        />
       </WorkContainer>
     </Section>
   );

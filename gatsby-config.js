@@ -21,23 +21,16 @@ module.exports = {
         link: '/#education'
       },
       {
-        name: 'hobbies',
-        link: '/#hobbies'
+        name: 'interests',
+        link: '/#interests'
       }
-    ],
-    currentTechnologies: [
-      'Angular',
-      'NodeJS',
-      'Terraform',
-      'AWS API Gateway',
-      'AWS Lambda',
-      'Gatsby'
     ],
     experienceStart: 2016
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-breakpoints`,
+    `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -48,9 +41,45 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `data`,
-        path: `${__dirname}/src/data`,
+        name: `bio`,
+        path: `${__dirname}/src/data/bio`,
       }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blurb`,
+        path: `${__dirname}/src/data/blurb`,
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `interests`,
+        path: `${__dirname}/src/data/interests`,
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `work`,
+        path: `${__dirname}/src/data/work`,
+      }
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        // CommonMark mode (default: true)
+        commonmark: true,
+        // Footnotes mode (default: true)
+        footnotes: true,
+        // Pedantic mode (default: true)
+        pedantic: true,
+        // GitHub Flavored Markdown mode (default: true)
+        gfm: true,
+        // Plugins configs
+        plugins: [],
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -76,12 +105,6 @@ module.exports = {
         component: require.resolve('./src/components/layout.tsx'),
       },
     },
-    {
-      resolve: `gatsby-plugin-postcss`,
-      options: {
-        // Accepts all options defined by `gatsby-plugin-postcss` plugin.
-      },
-    },
-    `gatsby-transformer-json`,
+    `gatsby-plugin-postcss`,
   ]
 };

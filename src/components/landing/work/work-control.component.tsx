@@ -9,13 +9,6 @@ const WorkControlElement = styled('button')<{isActive: boolean}>`
   ${tw`pb-2`}
 
   color: ${props => props.isActive ? 'red' : 'black'};
-
-  @media (max-width: ${props => props.theme.sizes.mobile}) {
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    ${tw`p-4`}
-  }
 `;
 
 /**

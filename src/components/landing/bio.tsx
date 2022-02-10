@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { css } from '@emotion/core';
 import tw from 'twin.macro';
 
-import { Section, H1, UL } from '../styles';
+import { Section, H1 } from '../styles';
 
 const paragraphStyle = css`
   ${tw`mb-4 text-justify max-w-4xl`}
@@ -15,7 +15,6 @@ function Bio(): JSX.Element {
       site {
         siteMetadata {
           experienceStart
-          currentTechnologies
         }
       }
     }
@@ -52,11 +51,11 @@ function Bio(): JSX.Element {
         his clients&apos; applications
       </p>
 
-      <UL>
+      <ul>
         <li>At a cafe with his MacBook, enhancing a clients&apos; or his own application</li>
         <li>Biking around the city exploring new locations</li>
         <li>Camping with a leave-no-trace mentality</li>
-      </UL>
+      </ul>
     </Section>
   );
 }
