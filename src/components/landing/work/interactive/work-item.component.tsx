@@ -1,7 +1,7 @@
 import React from 'react';
 
 // eslint-disable-next-line no-unused-vars
-import { WorkData } from "../../../models/work.models";
+import { WorkData } from "../../../../models/work.models";
 
 const WorkItem = (workData: WorkData) => {
   return (

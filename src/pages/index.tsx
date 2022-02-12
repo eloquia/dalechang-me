@@ -3,11 +3,12 @@ import React from 'react';
 import SEO from '../components/common/seo';
 import Intro from '../components/landing/intro';
 import About from '../components/landing/about';
-import Work from '../components/landing/work/work.component';
+import WorkInteractive from '../components/landing/work/interactive/work-interactive.component';
 import Interests from '../components/landing/interests/interests';
 
 import '../styles/globals.css';
 import CurrentStack from '../components/landing/work/stack/current-stack.component';
+import WorkSimple from '../components/landing/work/simple/work-simple.component';
 
 /*
   The home page of the web application.
@@ -18,7 +19,8 @@ function IndexPage(): JSX.Element {
       <SEO title="Software Engineer" />
 
       <Intro />
-      <Work />
+      {/* <WorkInteractive /> */}
+      <WorkSimple />
       <About />
       <CurrentStack />
       <Interests />

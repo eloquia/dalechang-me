@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 // eslint-disable-next-line no-unused-vars
-import { WorkControlsArray, WorkData } from '../../../models/work.models';
+import { WorkControlsArray, WorkData } from '../../../../models/work.models';
 import WorkItem from './work-item.component';
 
 import WorkControls from './work-controls.component';
@@ -88,7 +88,7 @@ const workData: WorkData[] = [
  * Hydrates its child components and negotiates which work to display depending
  * on which button was clicked
  */
-const Work = () => {
+const WorkInteractive = () => {
   const [currentWork, setCurrentWork] = useState<WorkData>(workData[0]);
   const [workControlsArray, setWorkControlsArray] = useState<WorkControlsArray[]>(workData.map((datum: WorkData, index: number) => {
     return {
@@ -142,4 +142,4 @@ const Work = () => {
   );
 }
 
-export default Work;
+export default WorkInteractive;

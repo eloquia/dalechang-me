@@ -136,7 +136,7 @@ nav div span {
   color: hsla(210, 20%, 20%, 1);
   height: 100%;
   text-align: center;
-  padding-right: 1rem;
+  padding: 0 1rem;
 }
 @media (min-width: 640px) {
   #intro-text {
@@ -154,6 +154,8 @@ nav div span {
 
 #intro-action {
   margin: 2rem 0;
+  display: flex;
+  justify-content: center;
 }
 #download-resume-button {
   margin: 1rem 0;
