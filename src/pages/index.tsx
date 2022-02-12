@@ -21,8 +21,8 @@ function IndexPage(): JSX.Element {
       <Intro />
       {/* <WorkInteractive /> */}
       <WorkSimple />
-      <About />
       <CurrentStack />
+      <About />
       <Interests />
     </div>
   );

@@ -1,8 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import { TextContent } from '../styles';
-
 const Stack = () => {
 
   const query = useStaticQuery(graphql`
@@ -23,9 +21,7 @@ const Stack = () => {
   };
 
   return (
-    <TextContent>
-      <section dangerouslySetInnerHTML={html} />
-    </TextContent>
+    <section dangerouslySetInnerHTML={html} />
   )
 }
 

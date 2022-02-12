@@ -207,6 +207,16 @@ nav div span {
 }
 
 /*
+  Current Stack
+*/
+.current-stack-item {
+  padding: 1rem;
+  border-radius: 20px;
+  /* background-color: hsla(210, 90%, 90%, 1); */
+  box-shadow: 0 2px 2px #DDDDDD;
+}
+
+/*
   Not Found
 */
 #not-found {
