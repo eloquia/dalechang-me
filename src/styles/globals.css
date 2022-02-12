@@ -10,6 +10,10 @@ body {
   margin: 0;
 }
 
+section {
+  padding: 2rem;
+}
+
 .bold {
   font-weight: 700;
 }
@@ -182,11 +186,24 @@ nav div span {
 #about h2 {
   font-size: 24px;
 }
-#about div {
-  padding: 2rem;
-}
 #about div p {
   padding: 1rem 0;
+}
+
+/*
+  Work
+*/
+.work-items-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.work-simple-item {
+  padding: 1rem;
+  /* border-width: 1px;
+  border-style: dashed;
+  border-color: crimson;
+  border-top-right-radius: 30%; */
 }
 
 /*
@@ -256,4 +273,29 @@ nav div span {
   margin-left: 40%;
   margin-right:40%;
   margin-top: 10%;
+}
+
+/*
+  Footer
+*/
+.footer-content {
+  color: hsla(210, 20%, 20%, 1);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  border-top: 1px solid hsla(210, 20%, 20%, 1);
+}
+#copyright-date {
+  margin-right: 4px;
+}
+.footer-right span {
+  margin-right: 4px;
+}
+@media (min-width: 426px) {
+  .footer-content {
+    flex-direction: row;
+  }
 }
