@@ -17,5 +17,4 @@ This primarily uses the Gatsby ecosystem to serve up content, including:
 
 This site uses the following stack for styling and layouts:
 
-- Tailwind
-- Styled-Components
+- CSS3

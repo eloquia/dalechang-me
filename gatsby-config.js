@@ -35,6 +35,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `assets`,
+        path: `${__dirname}/src/assets`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `images`,
         path: `${__dirname}/src/images`
       }
@@ -70,12 +77,8 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        // CommonMark mode (default: true)
-        commonmark: true,
         // Footnotes mode (default: true)
         footnotes: true,
-        // Pedantic mode (default: true)
-        pedantic: true,
         // GitHub Flavored Markdown mode (default: true)
         gfm: true,
         // Plugins configs
@@ -92,12 +95,11 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#ffffff`,
         display: `minimal-ui`,
-        // icon: `src/images/logo.png`
+        icon: `src/images/d-ice-logo.png`
       }
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-typescript`,
-    `gatsby-plugin-emotion`,
     `gatsby-plugin-anchor-links`,
     {
       resolve: 'gatsby-plugin-layout',

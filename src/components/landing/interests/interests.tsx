@@ -3,7 +3,6 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 // eslint-disable-next-line no-unused-vars
 import Interest, { InterestProps } from './interest'
-import { H1, Section } from '../../styles';
 
 function Interests(): JSX.Element {
 
@@ -22,17 +21,17 @@ function Interests(): JSX.Element {
   const interests: InterestProps[] = interestsQuery.interestsJson.interests;
 
   return (
-    <Section className="interests" id="interests">
-      <H1>Interests</H1>
+    <section className="interests" id="interests">
+      <h1>Interests</h1>
 
       {interests.map(interest => (
         <Interest
-            key={interest.id}
-            id={interest.id}
-            name={interest.name}
-            description={interest.description}/>
+          key={interest.id}
+          id={interest.id}
+          name={interest.name}
+          description={interest.description} />
       ))}
-    </Section>
+    </section>
   );
 }
 

@@ -1,12 +1,9 @@
 import React, { useState } from 'react';
-import tw from 'twin.macro';
-import styled from 'styled-components';
 
 // eslint-disable-next-line no-unused-vars
 import { WorkControlsArray, WorkData } from '../../../models/work.models';
 import WorkItem from './work-item.component';
 
-import { Section, H1 } from '../../styles';
 import WorkControls from './work-controls.component';
 
 /*
@@ -86,10 +83,6 @@ const workData: WorkData[] = [
   }
 ];
 
-const WorkContainer = styled.div`
-  ${tw`flex flex-col`}
-`;
-
 /**
  * Overall component for the Work section in the Landing Page.
  * Hydrates its child components and negotiates which work to display depending
@@ -122,10 +115,10 @@ const Work = () => {
   };
 
   return (
-    <Section className="work-section" id="work">
-      <H1>Work</H1>
+    <section className="work-section" id="work">
+      <h1>Work</h1>
 
-      <WorkContainer>
+      <div>
         <WorkControls
           workControlsArray={workControlsArray}
           handleWorkChange={handleWorkChange}
@@ -144,8 +137,8 @@ const Work = () => {
           workItems={currentWork.workItems}
           takeaway={currentWork.takeaway}
         />
-      </WorkContainer>
-    </Section>
+      </div>
+    </section>
   );
 }
 

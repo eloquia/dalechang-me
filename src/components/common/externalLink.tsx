@@ -1,5 +1,4 @@
 import React from 'react';
-import { linkStyle } from '../styles';
 
 export interface ExternalLinkProps {
   href: string;
@@ -8,7 +7,7 @@ export interface ExternalLinkProps {
 
 const ExternalLink = (props: ExternalLinkProps) => {
   const { href, displayText } = props;
-  return <a target="_blank" rel="noreferrer" href={href} css={linkStyle}>{displayText}</a>
+  return <a target="_blank" rel="noreferrer" href={href}>{displayText}</a>
 }
 
 export default ExternalLink;

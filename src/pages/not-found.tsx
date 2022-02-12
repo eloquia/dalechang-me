@@ -1,14 +1,8 @@
 import React from 'react';
-import { css } from '@emotion/react';
-import tw from 'twin.macro';
-
-const notFoundStyle = css`
-  ${tw`p-64`}
-`;
 
 function NotFound(): JSX.Element {
   return (
-    <article css={notFoundStyle}>
+    <article>
       <h1>Page Not Found</h1>
       <p>Oops, we could not find the page you are looking for!</p>
     </article>

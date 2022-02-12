@@ -1,12 +1,32 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 /*
   Global Styles
+
+  Theme colors
+  - primary: HSL(202, 87%, 42%)
 */
 body {
   font-family: "Roboto";
+  background: HSL(202, 87%, 42%);
+  margin: 0;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+#outer-content {
+  /* border-radius: 32px;
+  margin: 1rem;
+  padding: 1rem; */
+  background-color: #EEEEEE;
+}
+@media (min-width: 768px) {
+  #outer-content {
+    border-radius: 32px;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #EEEEEE;
+  }
 }
 
 /*
@@ -15,28 +35,136 @@ body {
 /* .logo-container {
   margin: .5rem;
 } */
+#logo {
+  border-radius: 50%;
+  background-color: HSL(202, 87%, 42%);
+  width: 32px;
+  height: 32px;
+  display: table-cell;
+  color: white;
+  float: left;
+  font-weight: 700;
+  -webkit-box-direction: normal;
+  box-sizing: border-box;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 18px;
+  margin-top: 0;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  text-align: center;
+}
 
 /*
   Header
 */
 header {
   padding: .5rem;
+  display: flex;
+  height: 48;
+  justify-content: space-between;
+  box-shadow: 0 2px 2px #DDDDDD;
+}
+header div {
+  display: flex;
+  justify-content: between;
+  align-items: center;
+  gap: .3rem;
+}
+header div span {
+  font-size: 1.5rem;
+  color: hsla(210, 20%, 20%, 1);
+}
+nav {
+  display: none;
+}
+@media (min-width: 600px) {
+  nav {
+    display: block;
+    display: flex;
+    gap: 1rem;
+  }
+}
+nav div span {
+  font-size: 1rem;
+}
+.header-link {
+  cursor: pointer;
+}
+.header-link:hover {
+  color:hsla(210, 37%, 15%, 1)
 }
 
 /*
   Intro Section
 */
-#intro h1 {
-  font-size: 48px;
+#intro {
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
 }
-#intro h2 {
-  font-size: 24px;
+@media (min-width: 640px) {
+  #intro {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+#profile-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 640px) {
+  #intro-image-container {
+    width: 50%;
+  }
+}
+
+@media (min-width: 640px) {
+  #intro-content {
+    width: 50%;
+  }
 }
 #intro-text {
+  color: hsla(210, 20%, 20%, 1);
   height: 100%;
-  color: #FFF;
-  text-align: right;
+  text-align: center;
   padding-right: 1rem;
+}
+@media (min-width: 640px) {
+  #intro-text {
+    text-align: left;
+  }
+}
+#intro-text h2 {
+  font-size: 1rem;
+  font-weight: 300;
+  color: hsla(210, 20%, 20%, 50);
+}
+#intro-text p {
+  margin: 1rem 0;
+}
+
+#intro-action {
+  margin: 2rem 0;
+}
+#download-resume-button {
+  margin: 1rem 0;
+  padding: 1rem 2rem;
+  background-color: HSL(202, 87%, 42%);
+  color: white;
+  text-decoration: none;
+  border-radius: 1rem;
+}
+#download-resume-button:hover {
+  background-color: HSL(202, 77%, 37%);
 }
 
 /*
@@ -57,4 +185,73 @@ header {
 }
 #about div p {
   padding: 1rem 0;
+}
+
+/*
+  Not Found
+*/
+#not-found {
+  padding: 1rem;
+}
+.not-found {
+  font-family: 'Pacifico';
+  background-color:#ff6f69;
+  background: radial-gradient(#ff6f69, #ff8b87);
+}
+.border{
+  padding: 5px;
+  background: linear-gradient(110deg, #ffeead 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #C5E7D7 34%, #88d8b0 34%);
+  background-size: 400% 400%;
+  height: 400px;
+  background-position: 25% 50%;
+  animation: Gradient 5s ease infinite;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 5s ease infinite;
+}
+.inner-cutout{
+  padding: 40px 0;
+  display: block;
+  background-color:#ff6f69;/*#ff6f69*/
+  margin: 2%;
+  padding-bottom: 40px;
+  background: radial-gradient(#ff6f69, #ff8b87);
+  background-size: 300%;
+  background-position:50% 50%;
+}
+.knockout {
+  vertical-align: middle;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  font-size:50pt;
+  color: blue;
+  color: #fff;
+  background: linear-gradient(110deg, #ffeead 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #C5E7D7 34%, #88d8b0 34%);
+  background-size: 400%;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.knockout{
+  animation: Gradient 5s ease infinite;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 5s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 30% 50%
+  }
+  50% {
+    background-position: 25% 50%
+  }
+  100% {
+    background-position: 30% 50%
+  }
+}
+.main{
+  width: 500px;
+  height: 800px;
+  margin-left: 40%;
+  margin-right:40%;
+  margin-top: 10%;
 }
