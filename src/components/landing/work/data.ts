@@ -12,8 +12,9 @@ export const workData: WorkData[] = [
     "description": "",
     "workItems": [
       "Develop and refine customer solutions",
-      "Incubate ideas and technology for making the world a better place",
-      "Lead design and organization of work items for clients"
+      "Incubate ideas and technology for making the world a better place.",
+      "Lead design and organization of work items for clients.",
+      "Mentored budding software engineers in industry-standard practices."
     ],
     "takeaway": ""
   },

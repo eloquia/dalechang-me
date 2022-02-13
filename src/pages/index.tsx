@@ -6,7 +6,7 @@ import About from '../components/landing/about';
 import WorkInteractive from '../components/landing/work/interactive/work-interactive.component';
 import Interests from '../components/landing/interests/interests';
 
-import '../styles/globals.css';
+import '../styles/globals.scss';
 import CurrentStack from '../components/landing/work/stack/current-stack.component';
 import WorkSimple from '../components/landing/work/simple/work-simple.component';
 
@@ -16,7 +16,7 @@ import WorkSimple from '../components/landing/work/simple/work-simple.component'
 function IndexPage(): JSX.Element {
   return (
     <div id="main-content">
-      <SEO title="Software Engineer" />
+      <SEO title="Dale Chang" />
 
       <Intro />
       {/* <WorkInteractive /> */}

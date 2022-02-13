@@ -12,12 +12,12 @@ export default function Footer() {
           <ExternalLink href="https://eloquia.io" displayText="Eloquia" />
         </div>
 
-        <div className="footer-right">
+        {/* <div className="footer-right">
           <span>Built with <ExternalLink href="https://gatsbyjs.com" displayText="Gatsby" /></span>
           <a target="_blank" rel="noreferrer" href="https://github.com/eloquia/dalechang-me/">
             <GitHub />
           </a>
-        </div>
+        </div> */}
       </div>
     </footer>
   )

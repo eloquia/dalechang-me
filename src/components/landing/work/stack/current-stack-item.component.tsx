@@ -7,7 +7,7 @@ export interface IStackItem {
 
 const CurrentStackItem = (stackItem: IStackItem) => {
   const items = stackItem.items.map(i => {
-    return <div className="technology">
+    return <div className="technology" key={i}>
       {i}
     </div>
   })

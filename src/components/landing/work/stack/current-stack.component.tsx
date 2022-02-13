@@ -37,7 +37,7 @@ const stackItems = [
   //   name: 'ML/AI',
   // },
 ].map(i => {
-  return <CurrentStackItem name={i.name} items={i.items} />
+  return <CurrentStackItem name={i.name} items={i.items} key={i.name} />
 });
 
 const CurrentStack = () => {

@@ -107,6 +107,6 @@ module.exports = {
         component: require.resolve('./src/components/layout.tsx'),
       },
     },
-    `gatsby-plugin-postcss`,
+    `gatsby-plugin-sass`,
   ]
 };

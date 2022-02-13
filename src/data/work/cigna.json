@@ -1,0 +1,17 @@
+{
+  "id": "cigna",
+  "companyName": "Cigna",
+  "client": "Internal",
+  "roleName": "Senior Software Engineering Advisor",
+  "dateStarted": "2019",
+  "dateEnded": "Present",
+  "location": "Denver, CO, USA",
+  "description": "As a leader in the health insurance industry, Cigna ",
+  "workItems": [
+    "Lead design and development of end-to-end features: PostgreSQL database design; REST API (Python + Flask or NodeJS); front-end (Angular 6+)",
+    "Wireframed and developed reusable components in Sketch and Adobe XD with stakeholders",
+    "Improved team output by 25% by teaching junior members of the team parts of the stack",
+    "Developed Jenkins CI/CD pipelines for continuous integration and automated deployments"
+  ],
+  "takeaway": ""
+}
