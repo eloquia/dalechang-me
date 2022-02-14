@@ -1,13 +1,7 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import './work-simple.component.scss';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
 const WorkSimple = () => {
   const {
@@ -93,11 +87,6 @@ const WorkSimple = () => {
   const caadsData = caadsDataQuery.edges[0].node;
   const cobraData = cobraDataQuery.edges[0].node;
 
-  console.log('cobraData', cobraData)
-  console.log('caadsData', caadsData)
-  console.log('cignaData', cignaData)
-  console.log('eloquiaData', eloquiaData)
-
   return (
     <section className="work-simple">
       <h2>Where I've Worked</h2>
@@ -114,20 +103,17 @@ const WorkSimple = () => {
             </div>
           </div>
 
-          <Slider>
-            <div>
-              <h3 className="hidden">Wireframe</h3>
+          <div className="work-item-md">
+            <div className="work-item-md-content">
               <StaticImage src={"../../../../images/cigna-ui.png"} alt="Client Management Platform UI" layout="constrained" />
             </div>
-            <div>
+            <div className="work-item-md-content">
               <h3>Client Management Platform</h3>
               <p>{cignaData.description}</p>
-            </div>
-            <div>
               <h3>Responsibilities</h3>
               {cignaData.workItems.map((workItem: string) => <li key={workItem}>{workItem}</li>)}
             </div>
-          </Slider>
+          </div>
           {/* End Latest job */}
         </div>
 
@@ -142,20 +128,17 @@ const WorkSimple = () => {
             </div>
           </div>
 
-          <Slider>
-            <div>
-              <h3 className="hidden">Wireframe</h3>
+          <div className="work-item-md-reverse">
+            <div className="work-item-md-content">
               <StaticImage src={"../../../../images/caads-ui.png"} alt="CAADS UI" layout="constrained" />
             </div>
-            <div>
-              <h3>CAADS</h3>
+            <div className="work-item-md-content">
+              <h3>Description</h3>
               <p>{caadsData.description}</p>
-            </div>
-            <div>
               <h3>Responsibilities</h3>
               {caadsData.workItems.map((workItem: string) => <li key={workItem}>{workItem}</li>)}
             </div>
-          </Slider>
+          </div>
           {/* End Latest job */}
         </div>
 
@@ -170,20 +153,17 @@ const WorkSimple = () => {
             </div>
           </div>
 
-          <Slider>
-            <div>
-              <h3 className="hidden">Wireframe</h3>
+          <div className="work-item-md">
+            <div className="work-item-md-content">
               <StaticImage src={"../../../../images/cobra-ui.png"} alt="COBRA UI" layout="constrained" />
             </div>
-            <div>
-              <h3>COBRA</h3>
+            <div className="work-item-md-content">
+              <h3>Description</h3>
               <p>{cobraData.description}</p>
-            </div>
-            <div>
               <h3>Responsibilities</h3>
               {cobraData.workItems.map((workItem: string) => <li key={workItem}>{workItem}</li>)}
             </div>
-          </Slider>
+          </div>
           {/* End Latest job */}
         </div>
       </div>

@@ -6,7 +6,7 @@
   "dateStarted": "2019",
   "dateEnded": "Present",
   "location": "Denver, CO, USA",
-  "description": "As a leader in the health insurance industry, Cigna ",
+  "description": "Client Management Platform offers a window of data and analytics for insurance clients. Cigna agents organize graphs and charts on a dashboard to best summarize the savings that clients enjoy by changing the plans they provide to their employees. These dashboard tiles are exported and archived as powerpoint and PDF documents for client meetings and reference.",
   "workItems": [
     "Lead design and development of end-to-end features: PostgreSQL database design; REST API (Python + Flask or NodeJS); front-end (Angular 6+)",
     "Wireframed and developed reusable components in Sketch and Adobe XD with stakeholders",
