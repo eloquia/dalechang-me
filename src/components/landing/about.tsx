@@ -1,13 +1,22 @@
 import React from 'react';
+import { StaticImage } from "gatsby-plugin-image";
+import './about.scss';
+import ExternalLink from '../common/externalLink';
 
 const About = () => {
   return (
     <section id="about">
-      <div id="about-text">
-        <h2>About Me</h2>
-        <p>Raised in Virginia, I grew up building things in blocks and Legos. I remember being fascinated by all of the possible things I can make in my playground box. Naturally this extended to larger and larger domains as I competed in robotics competitions in high school. At University of Virginia I studied Engineering, graduated with a degree in Physics, and could call myself master of the universe--or at least an acolyte or something like that.</p>
-        <p>Soon after I got my first software development job at Lockheed Martin in Washington DC and boy was I overwhelmed. It helped awaken in me the "soft" skills that I did not think I needed as a software engineer like taking responsibility, empathetic listening, predicting workload, and learning how to learn quickly.</p>
-        <p>Since then I continue to build solutions which make the world a better place. I believe that the more we learn about the world and from our mistakes, the better equipped we are to making it a better place.</p>
+      <h2>About Me</h2>
+
+      <div id="about-content">
+        <div id="about-text">
+          <p>I like to say that I graduated with a degree in first principles thinking. In college I changed majors three times in order to satisfy my need to understand how things work at a fundamental level. From biomedical engineering to materials science and eventually physics, I am glad to say that my <ExternalLink href="https://www.youtube.com/watch?v=BQ2_BwqcFsc" displayText='meandering journey' /> left me with proof that I can tackle some convoluted problems.</p>
+          <p>Up to today I've enjoyed working in a variety of domains, from architecting <span className="emphasis">NLP solutions</span> in a <span className="emphasis">legal</span> <span className="emphasis">start-up</span> to <span className="emphasis">healthcare and financial analytics</span> in a <span className="emphasis">gigantic Fortune 20 corporation</span>, I look forward to what the future has in store.</p>
+        </div>
+        <div id="about-image-container">
+          <StaticImage src={"../../images/enthousiasm.png"} width={300} alt="A picture of my enthousiasm for trying new things" />
+          <span className="text-sm"><em>My first time trying karahi (kadai).</em></span>
+        </div>
       </div>
     </section>
   )

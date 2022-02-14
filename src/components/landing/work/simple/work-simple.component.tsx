@@ -88,12 +88,33 @@ const WorkSimple = () => {
   const cobraData = cobraDataQuery.edges[0].node;
 
   return (
-    <section className="work-simple">
+    <section id="work" className="work-simple">
       <h2>Where I've Worked</h2>
 
       <div className="work-simple-content">
         <div className="work-items-container">
-          {/* Start Latest job */}
+          <div className="work-item-metadata">
+            <div>
+              <span className="text-gray text-large">{eloquiaData.roleName}</span><span className="text-blue text-large"> @ {eloquiaData.companyName}</span>
+            </div>
+            <div>
+              <span className="text-gray">{eloquiaData.dateStarted} - {eloquiaData.dateEnded}</span>
+            </div>
+          </div>
+
+          <div className="work-item-imageless">
+            <div className="work-item-imageless-section">
+              <h3>Eloquia</h3>
+              <p>{eloquiaData.description}</p>
+            </div>
+            <div className="work-item-imageless-section">
+              <h3>Responsibilities</h3>
+              {eloquiaData.workItems.map((workItem: string) => <li key={workItem}>{workItem}</li>)}
+            </div>
+          </div>
+        </div>
+
+        <div className="work-items-container">
           <div className="work-item-metadata">
             <div>
               <span className="text-gray text-large">{cignaData.roleName}</span><span className="text-blue text-large"> @ {cignaData.companyName}</span>
@@ -114,11 +135,9 @@ const WorkSimple = () => {
               {cignaData.workItems.map((workItem: string) => <li key={workItem}>{workItem}</li>)}
             </div>
           </div>
-          {/* End Latest job */}
         </div>
 
         <div className="work-items-container">
-          {/* Start Latest job */}
           <div className="work-item-metadata">
             <div>
               <span className="text-gray text-large">{caadsData.roleName}</span><span className="text-blue text-large"> @ {caadsData.companyName}</span>
@@ -139,11 +158,9 @@ const WorkSimple = () => {
               {caadsData.workItems.map((workItem: string) => <li key={workItem}>{workItem}</li>)}
             </div>
           </div>
-          {/* End Latest job */}
         </div>
 
         <div className="work-items-container">
-          {/* Start Latest job */}
           <div className="work-item-metadata">
             <div>
               <span className="text-gray text-large">{cobraData.roleName}</span><span className="text-blue text-large"> @ {cobraData.companyName}</span>
@@ -164,7 +181,6 @@ const WorkSimple = () => {
               {cobraData.workItems.map((workItem: string) => <li key={workItem}>{workItem}</li>)}
             </div>
           </div>
-          {/* End Latest job */}
         </div>
       </div>
     </section>

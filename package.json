@@ -26,6 +26,7 @@
     "gatsby-plugin-react-helmet": "^5.7.0",
     "gatsby-plugin-sass": "^5.7.0",
     "gatsby-plugin-sharp": "^4.7.0",
+    "gatsby-plugin-smoothscroll": "^1.2.0",
     "gatsby-source-filesystem": "^4.7.0",
     "gatsby-transformer-json": "^4.7.0",
     "gatsby-transformer-remark": "^5.7.0",

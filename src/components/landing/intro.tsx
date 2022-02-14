@@ -1,21 +1,8 @@
 import React from 'react';
 import { StaticImage } from "gatsby-plugin-image";
-import { useStaticQuery, graphql } from "gatsby"
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 const Intro = () => {
-  const pdfQuery = useStaticQuery(graphql`
-    query ResumeQuery {
-      allFile(filter: {extension: {eq: "pdf"}}) {
-        edges {
-          node {
-            name
-            publicURL
-          }
-        }
-      }
-    }
-  `);
-
   return (
     <section id="intro">
       <div id="profile-image-container">
@@ -40,7 +27,7 @@ const Intro = () => {
           <p>Software Engineer with 6+ years experience deploying and maintaining production applications in the cloud. I love working on all aspects of cloud-based applications, from designing to infrastructure, and from backend to frontend.</p>
         </div>
         <div id="intro-action">
-          <a id="download-resume-button" href={pdfQuery.allFile.edges[0].node.publicURL} download>Download Resume</a>
+          <span className="download-resume-button" onClick={() => scrollTo("#resume")}>Download Resume</span>
         </div>
       </div>
     </section>

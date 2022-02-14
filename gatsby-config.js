@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Dale Chang`,
+    title: `Dale Chang | Software Engineer`,
     description: `Personal and Portfolio Website for Dale Chang`,
     author: `@eloquia`,
     menuLinks: [
@@ -108,5 +108,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`,
+    `gatsby-plugin-smoothscroll`,
   ]
 };

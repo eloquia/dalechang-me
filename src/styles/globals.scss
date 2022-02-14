@@ -1,8 +1,14 @@
+@use 'abstracts/variables';
+
+@use 'components/footer';
+
 /*
   Global Styles
 
   Theme colors
   - primary: HSL(202, 87%, 42%)
+
+  Reference: https://www.koderhq.com/tutorial/sass/project-structure/
 */
 body {
   font-family: "Roboto";
@@ -12,6 +18,11 @@ body {
 
 section {
   padding: 2rem;
+  max-width: 920px;
+}
+
+p {
+  margin: 0;
 }
 
 .bold {
@@ -24,6 +35,9 @@ section {
 .text-gray {
   color: hsla(210, 35%, 35%, 1);
 }
+.text-sm {
+  font-size: .75rem;
+}
 .text-large {
   font-size: 1.25rem;
 }
@@ -32,6 +46,10 @@ section {
 }
 .hidden {
   visibility: hidden;
+}
+
+.emphasis {
+  color: HSL(202, 87%, 42%);
 }
 
 #outer-content {
@@ -47,6 +65,15 @@ section {
     padding: 1rem;
     background-color: #EEEEEE;
   }
+}
+.w-50 {
+  width: 50%;
+}
+
+#main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*
@@ -115,7 +142,8 @@ nav div span {
   cursor: pointer;
 }
 .header-link:hover {
-  color:hsla(210, 37%, 15%, 1)
+  color: hsla(210, 37%, 15%, 1);
+  text-decoration: underline;
 }
 
 /*
@@ -177,7 +205,7 @@ nav div span {
   display: flex;
   justify-content: center;
 }
-#download-resume-button {
+.download-resume-button {
   margin: 1rem 0;
   padding: 1rem 2rem;
   background-color: HSL(202, 87%, 42%);
@@ -185,30 +213,16 @@ nav div span {
   text-decoration: none;
   border-radius: 1rem;
 }
-#download-resume-button:hover {
+.download-resume-button:hover {
   background-color: HSL(202, 77%, 37%);
-}
-
-/*
-  About Section
-*/
-#about {
-  display: flex;
-  flex-direction: column-reverse;
-  @media screen and (min-width: 640px) {
-    flex-direction: row;
-  }
-}
-#about h2 {
-  font-size: 24px;
-}
-#about div p {
-  padding: 1rem 0;
 }
 
 /*
   Work
 */
+.work-header {
+  display: flex;
+}
 .work-simple {
   display: flex;
   flex-direction: column;
@@ -243,6 +257,16 @@ nav div span {
   }
   .work-item-md-content {
     width: 50vw;
+  }
+}
+
+.work-item-imageless {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media screen and (min-width: 426px) {
+  .work-item-imageless {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -359,29 +383,4 @@ nav div span {
   margin-left: 40%;
   margin-right:40%;
   margin-top: 10%;
-}
-
-/*
-  Footer
-*/
-.footer-content {
-  color: hsla(210, 20%, 20%, 1);
-  padding: 2rem;
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-  border-top: 1px solid hsla(210, 20%, 20%, 1);
-}
-#copyright-date {
-  margin-right: 4px;
-}
-.footer-right span {
-  margin-right: 4px;
-}
-@media screen and (min-width: 426px) {
-  .footer-content {
-    flex-direction: row;
-  }
 }

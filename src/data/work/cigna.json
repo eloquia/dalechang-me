@@ -8,10 +8,9 @@
   "location": "Denver, CO, USA",
   "description": "Client Management Platform offers a window of data and analytics for insurance clients. Cigna agents organize graphs and charts on a dashboard to best summarize the savings that clients enjoy by changing the plans they provide to their employees. These dashboard tiles are exported and archived as powerpoint and PDF documents for client meetings and reference.",
   "workItems": [
-    "Lead design and development of end-to-end features: PostgreSQL database design; REST API (Python + Flask or NodeJS); front-end (Angular 6+)",
-    "Wireframed and developed reusable components in Sketch and Adobe XD with stakeholders",
-    "Improved team output by 25% by teaching junior members of the team parts of the stack",
-    "Developed Jenkins CI/CD pipelines for continuous integration and automated deployments"
+    "Lead design and development of end-to-end features: database design (RDS, Postgres, S3; REST API (API Gateway, Lambda, Python, & NodeJS); front-end (Angular 11+).",
+    "Improved team output by 25% by teaching junior members of the team parts of the stack.",
+    "Developed Jenkins CI/CD pipelines for continuous integration and automated deployments."
   ],
   "takeaway": ""
 }

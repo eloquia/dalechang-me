@@ -1,0 +1,25 @@
+/*
+  Footer
+*/
+footer {
+  color: hsla(210, 20%, 20%, 1);
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  border-top: 1px solid hsla(210, 20%, 20%, 1);
+}
+#copyright-date {
+  margin-right: 4px;
+}
+.footer-right {
+  display: flex;
+  gap: 1rem;
+}
+@media screen and (min-width: 426px) {
+  .footer-content {
+    flex-direction: row;
+  }
+}
