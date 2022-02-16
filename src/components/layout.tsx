@@ -11,13 +11,12 @@ export type LayoutProps = { children: JSX.Element[] };
 
 export default function Layout(layoutProps: LayoutProps): JSX.Element {
   return (
-    <div id="outer-content">
-      {/* <Global styles={globalStyles} /> */}
+    <>
       <Header />
       <main>
         {layoutProps.children}
       </main>
       <Footer />
-    </div>
+    </>
   );
 }

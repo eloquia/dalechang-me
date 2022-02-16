@@ -15,7 +15,7 @@ import Resume from '../components/landing/resume';
 function IndexPage(): JSX.Element {
   return (
     <div id="main-content">
-      {/* <SEO title="Dale Chang" /> */}
+      <SEO title="Software Engineer" />
 
       <Intro />
       <About />

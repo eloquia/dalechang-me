@@ -1,6 +1,5 @@
 import React from 'react';
 import { useStaticQuery, graphql } from "gatsby";
-import './resume.scss';
 
 const Resume = () => {
   const pdfQuery = useStaticQuery(graphql`

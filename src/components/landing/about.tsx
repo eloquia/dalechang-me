@@ -1,6 +1,5 @@
 import React from 'react';
 import { StaticImage } from "gatsby-plugin-image";
-import './about.scss';
 import ExternalLink from '../common/externalLink';
 
 const About = () => {

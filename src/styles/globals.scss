@@ -1,6 +1,12 @@
 @use 'abstracts/variables';
 
-@use 'components/footer';
+@use 'base/normalize';
+
+@use 'components/about';
+@use 'components/resume';
+@use 'components/joke';
+
+@use 'layout/footer';
 
 /*
   Global Styles
@@ -12,7 +18,7 @@
 */
 body {
   font-family: "Roboto";
-  background: HSL(202, 87%, 42%);
+  background-color: #EEEEEE;
   margin: 0;
 }
 
@@ -30,10 +36,10 @@ p {
 }
 
 .text-blue {
-  color: HSL(202, 77%, 37%);
+  color: variables.$honolulu-blue;
 }
 .text-gray {
-  color: hsla(210, 35%, 35%, 1);
+  color: variables.$ash-gray;
 }
 .text-sm {
   font-size: .75rem;
@@ -49,23 +55,9 @@ p {
 }
 
 .emphasis {
-  color: HSL(202, 87%, 42%);
+  color: variables.$honolulu-blue;
 }
 
-#outer-content {
-  /* border-radius: 32px;
-  margin: 1rem;
-  padding: 1rem; */
-  background-color: #EEEEEE;
-}
-@media screen and (min-width: 768px) {
-  #outer-content {
-    border-radius: 32px;
-    margin: 1rem;
-    padding: 1rem;
-    background-color: #EEEEEE;
-  }
-}
 .w-50 {
   width: 50%;
 }
@@ -84,7 +76,7 @@ p {
 } */
 #logo {
   border-radius: 50%;
-  background-color: HSL(202, 87%, 42%);
+  background-color: variables.$honolulu-blue;
   width: 32px;
   height: 32px;
   display: table-cell;
@@ -113,7 +105,7 @@ header {
   display: flex;
   height: 48;
   justify-content: space-between;
-  box-shadow: 0 2px 2px #DDDDDD;
+  box-shadow: 0 2px 2px variables.$something-is-off-white;
 }
 header div {
   display: flex;
@@ -123,7 +115,7 @@ header div {
 }
 header div span {
   font-size: 1.5rem;
-  color: hsla(210, 20%, 20%, 1);
+  color: variables.$coal;
 }
 nav {
   display: none;
@@ -142,7 +134,7 @@ nav div span {
   cursor: pointer;
 }
 .header-link:hover {
-  color: hsla(210, 37%, 15%, 1);
+  color: variables.$black-hole;
   text-decoration: underline;
 }
 
@@ -181,7 +173,7 @@ nav div span {
   }
 }
 #intro-text {
-  color: hsla(210, 20%, 20%, 1);
+  color: variables.$coal;
   height: 100%;
   text-align: center;
   padding: 0 1rem;
@@ -194,7 +186,7 @@ nav div span {
 #intro-text h2 {
   font-size: 1rem;
   font-weight: 300;
-  color: hsla(210, 20%, 20%, 50);
+  color: variables.$coal;
 }
 #intro-text p {
   margin: 1rem 0;
@@ -208,13 +200,13 @@ nav div span {
 .download-resume-button {
   margin: 1rem 0;
   padding: 1rem 2rem;
-  background-color: HSL(202, 87%, 42%);
+  background-color: variables.$primary_color;
   color: white;
   text-decoration: none;
   border-radius: 1rem;
 }
 .download-resume-button:hover {
-  background-color: HSL(202, 77%, 37%);
+  background-color: variables.$naaavy-beans;
 }
 
 /*
@@ -287,7 +279,7 @@ nav div span {
 
 .work-item-meta {
   padding: 2rem;
-  background-color: #DDDDDD;
+  background-color: variables.$something-is-off-white;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -313,70 +305,9 @@ nav div span {
   padding: 1rem;
   border-radius: 20px;
   /* background-color: hsla(210, 90%, 90%, 1); */
-  box-shadow: 0 2px 2px #DDDDDD;
+  box-shadow: 0 2px 2px variables.$something-is-off-white;
 }
 
-/*
-  Not Found
-*/
-#not-found {
-  padding: 1rem;
-}
-.not-found {
-  font-family: 'Pacifico';
-  background-color:#ff6f69;
-  background: radial-gradient(#ff6f69, #ff8b87);
-}
-.border{
-  padding: 5px;
-  background: linear-gradient(110deg, #ffeead 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #C5E7D7 34%, #88d8b0 34%);
-  background-size: 400% 400%;
-  height: 400px;
-  background-position: 25% 50%;
-  animation: Gradient 5s ease infinite;
-  -webkit-animation: Gradient 15s ease infinite;
-  -moz-animation: Gradient 5s ease infinite;
-}
-.inner-cutout{
-  padding: 40px 0;
-  display: block;
-  background-color:#ff6f69;/*#ff6f69*/
-  margin: 2%;
-  padding-bottom: 40px;
-  background: radial-gradient(#ff6f69, #ff8b87);
-  background-size: 300%;
-  background-position:50% 50%;
-}
-.knockout {
-  vertical-align: middle;
-  text-align: center;
-  font-family: 'Pacifico', cursive;
-  font-size:50pt;
-  color: blue;
-  color: #fff;
-  background: linear-gradient(110deg, #ffeead 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #C5E7D7 34%, #88d8b0 34%);
-  background-size: 400%;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-}
-.knockout{
-  animation: Gradient 5s ease infinite;
-  -webkit-animation: Gradient 15s ease infinite;
-  -moz-animation: Gradient 5s ease infinite;
-}
-
-@-webkit-keyframes Gradient {
-  0% {
-    background-position: 30% 50%
-  }
-  50% {
-    background-position: 25% 50%
-  }
-  100% {
-    background-position: 30% 50%
-  }
-}
 .main{
   width: 500px;
   height: 800px;
