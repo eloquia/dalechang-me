@@ -1,0 +1,22 @@
+@use '../abstracts//variables';
+
+.jira-task {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  row-gap: 15px;
+}
+
+.jira-task:nth-child(n) {
+  padding: 16px;
+}
+.jira-task:nth-child(2n) {
+  background-color: variables.$something-is-off-white;
+}
+.technology-list {
+  column-count: 2;
+}
+@media screen and (min-width: 640px) {
+  .technology-list {
+    column-count: 3;
+  }
+}
