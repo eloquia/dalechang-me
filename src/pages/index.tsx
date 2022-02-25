@@ -8,6 +8,8 @@ import CurrentStack from '../components/landing/work/stack/current-stack.compone
 import WorkSimple from '../components/landing/work/simple/work-simple.component';
 import '../styles/globals.scss';
 import Resume from '../components/landing/resume';
+import Technologies from '../components/landing/technologies';
+import Contact from '../components/landing/contact';
 
 /*
   The home page of the web application.
@@ -20,9 +22,11 @@ function IndexPage(): JSX.Element {
       <Intro />
       <About />
       <WorkSimple />
-      <CurrentStack />
+      {/* <CurrentStack /> */}
+      <Technologies />
       <Resume />
-      <Interests />
+      {/* <Interests /> */}
+      <Contact />
     </div>
   );
 }

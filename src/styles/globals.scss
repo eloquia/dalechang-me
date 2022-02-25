@@ -4,7 +4,7 @@
 
 @use 'components/about';
 @use 'components/resume';
-@use 'components/joke';
+@use 'components/contact';
 
 @use 'layout/footer';
 
@@ -207,6 +207,19 @@ nav div span {
 }
 .download-resume-button:hover {
   background-color: variables.$naaavy-beans;
+}
+
+button.secondary-button {
+  margin: 1rem 0;
+  padding: 1rem 2rem;
+  background-color: variables.$accent_2;
+  color: variables.$dark-lava;
+  text-decoration: none;
+  border-radius: 1rem;
+}
+button.secondary-button:hover {
+  background-color: variables.$accent_1;
+  cursor: pointer;
 }
 
 /*
