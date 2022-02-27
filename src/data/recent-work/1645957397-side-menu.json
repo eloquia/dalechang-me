@@ -8,7 +8,7 @@
   "type": "Task",
   "status": "DEFINED",
   "priority": "Medium",
-  "resolution": "Unresolved",
+  "resolution": "Fixed",
   "description": "In order to fully copy the JIRA look, I need to add a scrolling side menu that displays all of the tasks that I have scheduled.",
   "technologies": [
     "ReactJS",

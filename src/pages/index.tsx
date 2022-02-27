@@ -26,7 +26,7 @@ function IndexPage(): JSX.Element {
       <RecentWorks />
       <Resume />
       {/* <Interests /> */}
-      <Contact />
+      {/* <Contact /> */}
     </div>
   );
 }
