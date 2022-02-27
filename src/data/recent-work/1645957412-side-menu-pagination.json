@@ -1,0 +1,17 @@
+{
+  "id": "939f6917-6b8e-4ab0-bb03-ce62931f3456",
+  "taskId": "DCME-010",
+  "project": "dalechang.me",
+  "title": "Add pagination to JIRA side menu",
+  "assignee": "Dale Chang",
+  "reporter": "Dale Chang",
+  "type": "Task",
+  "status": "DEFINED",
+  "priority": "Medium",
+  "resolution": "Unresolved",
+  "description": "The number of tasks in GatsbyJS's GraphQL database will soon exceed the amount that can be nicely displayed in the section. Using pagination to limit the number of tasks displayed will make UX nicer.",
+  "technologies": [
+    "ReactJS"
+  ],
+  "dateCreated": "2022-02-26"
+}

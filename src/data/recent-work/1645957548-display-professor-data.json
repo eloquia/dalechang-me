@@ -1,0 +1,18 @@
+{
+  "id": "f0725c17-287a-42fb-a0a8-c778e406a1fe",
+  "taskId": "PAS-019",
+  "project": "Professor Agrawala Site",
+  "title": "Display data from GraphQL into React Chrono timeline",
+  "assignee": "Dale Chang",
+  "reporter": "Dale Chang",
+  "type": "Task",
+  "status": "DEFINED",
+  "priority": "Medium",
+  "resolution": "Unresolved",
+  "description": "Once we aggregate all of Professor's data, we can get a better understanding of what it looks like and how we can present it in a meaningful way on his new website",
+  "technologies": [
+    "GraphQL",
+    "ReactJS"
+  ],
+  "dateCreated": "2022-02-27"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "13c0890b-9d36-4cea-9190-b2b019cf90b1",
+  "taskId": "JIRA-458",
+  "project": "CMP",
+  "title": "Develop a scalable pattern for filtering data based on a user's permissions.",
+  "assignee": "Dale Chang",
+  "reporter": "Dale Chang",
+  "type": "Feature",
+  "status": "IN PROGRESS",
+  "priority": "High",
+  "resolution": "Fixed",
+  "description": "As users sign up for more and more specialzied plans, the application needs a scalable and maintainable way to filter out data from retrieval.",
+  "technologies": [
+    "Terraform",
+    "AWS",
+    "API Gateway",
+    "Lambda",
+    "S3",
+    "NodeJS",
+    "Sequelize",
+    "RDS",
+    "Postgres",
+    "TypeScript",
+    "Jenkins",
+    "Angular"
+  ],
+  "timeScheduled": "2022-02-02"
+}

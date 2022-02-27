@@ -1,0 +1,21 @@
+{
+  "id": "3023e28e-89c1-44c5-81df-618d5c8bf834",
+  "taskId": "CMP-402",
+  "project": "CMP",
+  "title": "Create dashboard component for viewing/updating security policies.",
+  "assignee": "Dale Chang",
+  "reporter": "Dale Chang",
+  "type": "Feature",
+  "status": "IN PROGRESS",
+  "priority": "High",
+  "resolution": "Fixed",
+  "description": "Admins need to be able to fine-tune the security enablements and restrictions for groups of and individual users.",
+  "technologies": [
+    "Angular",
+    "TypeScript",
+    "Angular",
+    "Jenkins",
+    "Artifactory"
+  ],
+  "timeScheduled": "2022-01-05"
+}

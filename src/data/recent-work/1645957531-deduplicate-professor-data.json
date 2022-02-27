@@ -1,0 +1,19 @@
+{
+  "id": "b867c1aa-f699-4eab-9a89-413f7e8bfa4f",
+  "taskId": "PAS-018",
+  "project": "Professor Agrawala Site",
+  "title": "Deduplicate Professor's Scraped Data",
+  "assignee": "Dale Chang",
+  "reporter": "Dale Chang",
+  "type": "Task",
+  "status": "DEFINED",
+  "priority": "Medium",
+  "resolution": "Unresolved",
+  "description": "There's an issue with all of the websites that Professor Agrawala has, and it is that all of these websites lack a central data source. All of the websites about him display only a certain aspect about the main--even Google Scholar is not all-encompassing. His common works are listed as duplicates in almost 8 different websites. I could come up with an algorithm to remove all exact duplicate titles and potentially do some checking on near duplicates",
+  "technologies": [
+    "Python",
+    "Algorithms",
+    "Data Structures"
+  ],
+  "dateCreated": "2022-02-27"
+}

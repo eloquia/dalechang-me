@@ -1,9 +1,8 @@
-@use '../abstracts//variables';
+@use '../abstracts/variables';
 
 .jira-task {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  row-gap: 15px;
+  display: flex;
+  flex-direction: column;
 }
 
 .jira-task:nth-child(n) {
@@ -12,6 +11,86 @@
 .jira-task:nth-child(2n) {
   background-color: variables.$something-is-off-white;
 }
+
+/*
+  JIRA Task header
+*/
+
+.jira-task-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.jira-task-header-main {
+  display: flex;
+  flex-direction: column;
+}
+.jira-task-header-main ul {
+  margin: 0;
+}
+.jira-task-header-main h3 {
+  margin: 0;
+}
+
+ul.jira-task-header-items {
+  list-style: none;
+  padding-inline-start: 0;
+}
+li.jira-task-header-item {
+  display: inline;
+}
+li.jira-task-header-item:not(:last-child)::after {
+  content: ' | ';
+}
+
+.jira-task-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.jira-task-main-content {
+  display: flex;
+  flex-direction: column;
+}
+.jira-task-side-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+  JIRA Task Details
+*/
+.jira-task-section-header {
+  display: flex;
+  align-items: center;
+}
+.jira-task-section-header-line {
+  height: 1px;
+  width: 100%;
+  border-bottom: 1px variables.$ash-light-gray solid;
+  margin: 0 8px;
+}
+
+.jira-task-details {
+  column-count: 2;
+}
+.jira-task-detail {
+  display: flex;
+}
+.jira-task-detail span {
+  width: 50%;
+}
+.jira-task-detail-key {
+  color: #6b778c;
+}
+.jira-task-detail-value {
+  color: rgb(23, 43, 77);
+}
+
+/*
+  JIRA Task Description
+*/
+
+
 .technology-list {
   column-count: 2;
 }

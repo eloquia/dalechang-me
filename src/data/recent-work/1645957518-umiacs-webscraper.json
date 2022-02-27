@@ -1,0 +1,19 @@
+{
+  "id": "aa622f11-6dce-4831-9538-b148bc022daf",
+  "taskId": "PAS-017",
+  "project": "Professor Agrawala Site",
+  "title": "Write UMIACS web scraper",
+  "assignee": "Dale Chang",
+  "reporter": "Dale Chang",
+  "type": "Task",
+  "status": "DEFINED",
+  "priority": "Medium",
+  "resolution": "Unresolved",
+  "description": "In addition to Google Scholar, the UMD UMIACS site has a list of Professor Agrawala's published works and accolades. We would be remiss if we did not gather this data to see if it encompassed anything not yet collected.",
+  "technologies": [
+    "Python",
+    "BeautifulSoup",
+    "HTML5"
+  ],
+  "dateCreated": "2022-02-27"
+}

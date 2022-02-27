@@ -1,0 +1,19 @@
+{
+  "id": "481212f9-47fc-4491-93bf-0414ff36dd82",
+  "taskId": "ML-038",
+  "project": "MIND Lab",
+  "title": "Move GitLab Runner",
+  "assignee": "Dale Chang",
+  "reporter": "Dale Chang",
+  "type": "Task",
+  "status": "DEFINED",
+  "priority": "Low",
+  "resolution": "Unresolved",
+  "description": "Currently the CI/CD pipeline for the MIND Lab site is hosted on my machine. This is not a major concern because I am basically the only one who deploys anything using that CI/CD pipeline. However it would be nice to move the CI/CD server to MIND Lab's servers so I do not need to manage the processes.",
+  "technologies": [
+    "Docker",
+    "GitLab",
+    "CI/CD"
+  ],
+  "dateCreated": "2022-02-27"
+}

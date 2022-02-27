@@ -1,0 +1,27 @@
+{
+  "id": "57c8df61-c79b-4aad-8ec5-c389c580a465",
+  "taskId": "CMP-481",
+  "project": "CMP",
+  "title": "Research options for uploading large files to avoid WAF issues in AWS.",
+  "assignee": "Dale Chang",
+  "reporter": "Dale Chang",
+  "type": "Feature",
+  "status": "IN PROGRESS",
+  "priority": "High",
+  "resolution": "Fixed",
+  "description": "AWS's WAF (web application firewall) is preventing requests > 4 KB from being passed to the backend for processing. However the issue is that users will often modify and save data that exceeds the WAF limit.",
+  "technologies": [
+    "Terraform",
+    "AWS",
+    "API Gateway",
+    "Lambda",
+    "S3",
+    "NodeJS",
+    "Sequelize",
+    "RDS",
+    "Postgres",
+    "TypeScript",
+    "Jenkins"
+  ],
+  "timeScheduled": "2022-02-16"
+}

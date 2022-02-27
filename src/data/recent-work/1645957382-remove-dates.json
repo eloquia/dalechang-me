@@ -1,0 +1,19 @@
+{
+  "id": "3b3700e2-cabd-449e-9bf6-032897200ace",
+  "taskId": "DCME-008",
+  "project": "dalechang.me",
+  "title": "Remove Dates from Data",
+  "assignee": "Dale Chang",
+  "reporter": "Dale Chang",
+  "type": "Task",
+  "status": "IN PROGRESS",
+  "priority": "Medium",
+  "resolution": "Unresolved",
+  "description": "Displaying dates for these tasks does not seem relevant and almost detrimental. Honestly I don't have a set schedule for my non-work projects",
+  "technologies": [
+    "JIRA",
+    "GraphQL",
+    "JSON"
+  ],
+  "dateCreated": "2022-02-26"
+}

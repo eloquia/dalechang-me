@@ -1,0 +1,21 @@
+{
+  "id": "49b501ec-6ed7-4231-b5f4-55a0df408de5",
+  "taskId": "Integrate Mailgun",
+  "project": "DCME-016",
+  "title": "dalechang.me",
+  "assignee": "Dale Chang",
+  "reporter": "Dale Chang",
+  "type": "Task",
+  "status": "DEFINED",
+  "priority": "Medium",
+  "resolution": "Unresolved",
+  "description": "I think the last missing part to a personal portfolio website is the inclusion of a 'Contact Me' page.",
+  "technologies": [
+    "ReactJS",
+    "GraphQL",
+    "Mailgun",
+    "HTTP",
+    "REST API"
+  ],
+  "dateCreated": "2022-02-26"
+}

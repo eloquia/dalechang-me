@@ -1,0 +1,43 @@
+/*
+  Layout
+*/
+.recent-work-content {
+  display: flex;
+}
+.recent-work-left-menu {
+  width: 20%;
+  height: 500px;
+  overflow-y: scroll;
+  background-color: white;
+  border: rgb(223, 225, 229) 1px solid;
+}
+.jira-task-container {
+  width: 80%;
+  background-color: white;
+}
+
+/*
+  Menu Styles
+*/
+.jira-menu-item {
+  display: flex;
+  flex-direction: column;
+  border-bottom-color: rgb(223, 225, 229);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  padding: 8px 20px;
+}
+.jira-menu-item:hover {
+  background-color: gray;
+  cursor: pointer
+}
+
+.jira-menu-task-id {
+  color: rgb(0, 82, 204);
+}
+
+.jira-menu-task-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

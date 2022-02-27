@@ -1,0 +1,18 @@
+{
+  "id": "fbcbb868-a087-4321-96e0-27e971bfceee",
+  "taskId": "DCME-009",
+  "project": "dalechang.me",
+  "title": "Add side menu of JIRA tasks",
+  "assignee": "Dale Chang",
+  "reporter": "Dale Chang",
+  "type": "Task",
+  "status": "DEFINED",
+  "priority": "Medium",
+  "resolution": "Unresolved",
+  "description": "In order to fully copy the JIRA look, I need to add a scrolling side menu that displays all of the tasks that I have scheduled.",
+  "technologies": [
+    "ReactJS",
+    "GraphQL"
+  ],
+  "dateCreated": "2022-02-26"
+}

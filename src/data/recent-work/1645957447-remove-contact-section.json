@@ -1,0 +1,17 @@
+{
+  "id": "1c3c7692-d33b-43cc-84ef-5df871c67bfa",
+  "taskId": "DCME-013",
+  "project": "dalechang.me",
+  "title": "Remove Contact Section",
+  "assignee": "Dale Chang",
+  "reporter": "Dale Chang",
+  "type": "Task",
+  "status": "DEFINED",
+  "priority": "Medium",
+  "resolution": "Unresolved",
+  "description": "In order to deliver my website faster, I want to remove the Contact Section for now. It is an enhancement to the website and its absence does not detract from the overall goal of the website.",
+  "technologies": [
+    "ReactJS"
+  ],
+  "dateCreated": "2022-02-26"
+}

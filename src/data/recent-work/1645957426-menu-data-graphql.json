@@ -1,0 +1,18 @@
+{
+  "id": "13fbbe05-04f6-45f7-b77f-d54617cc8aa7",
+  "taskId": "DCME-011",
+  "project": "dalechang.me",
+  "title": "Read Task data from GraphQL",
+  "assignee": "Dale Chang",
+  "reporter": "Dale Chang",
+  "type": "Task",
+  "status": "DEFINED",
+  "priority": "Medium",
+  "resolution": "Unresolved",
+  "description": "After creating the menu, the menu needs to hydrate itself from the GraphQL data source.",
+  "technologies": [
+    "GraphQL",
+    "ReactJS"
+  ],
+  "dateCreated": "2022-02-26"
+}

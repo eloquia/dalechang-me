@@ -5,6 +5,7 @@
 @use 'components/about';
 @use 'components/resume';
 @use 'components/contact';
+@use 'components/recentwork';
 @use 'components/jiratask';
 
 @use 'layout/footer';
@@ -26,6 +27,9 @@ body {
 section {
   padding: 2rem;
   max-width: 920px;
+}
+section:nth-child(2n) {
+  // background-color: variables.$honolulu-blue;
 }
 
 p {
@@ -68,6 +72,10 @@ p {
 
 .mb-4 {
   margin-bottom: 16px;
+}
+
+.two-cols {
+  column-count: 2;
 }
 
 #main-content {

@@ -1,0 +1,19 @@
+{
+  "id": "8a907bfd-7b7e-450a-a7d4-3afc415ac7ab",
+  "taskId": "PAS-016",
+  "project": "Professor Agrawala Site",
+  "title": "Write Google Scholar web scraper",
+  "assignee": "Dale Chang",
+  "reporter": "Dale Chang",
+  "type": "Task",
+  "status": "DEFINED",
+  "priority": "Medium",
+  "resolution": "Unresolved",
+  "description": "Professor Agrawala has an impressive set of published works and other credentials out there. While we have scraped the majority of websites that mention who he is, Google Scholar lists almost 400 publications under his name. Rather than going with a manual approach to getting this data, I will use Python + BeautifulSoup to scrape the predictable HTML from that site to gather the last bit of data.",
+  "technologies": [
+    "Python",
+    "BeautifulSoup",
+    "HTML5"
+  ],
+  "dateCreated": "2022-02-27"
+}

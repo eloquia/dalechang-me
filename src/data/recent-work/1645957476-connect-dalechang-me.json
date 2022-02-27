@@ -1,0 +1,17 @@
+{
+  "id": "56573902-e09a-439f-83a7-9666936bf289",
+  "taskId": "DCME-015",
+  "project": "dalechang.me",
+  "title": "Add network rerouting to dalechang.me",
+  "assignee": "Dale Chang",
+  "reporter": "Dale Chang",
+  "type": "Task",
+  "status": "DEFINED",
+  "priority": "Medium",
+  "resolution": "Unresolved",
+  "description": "Once the site is deployed to GitHub Pages, I need to redirect traffic from dalechang.me to the GitHub Pages site. This way people can see my website when they go to dalechang.me",
+  "technologies": [
+    "Networking"
+  ],
+  "dateCreated": "2022-02-26"
+}

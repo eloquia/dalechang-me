@@ -1,0 +1,19 @@
+{
+  "id": "3b5b50dc-f379-4b42-8ec7-04d13e483ad5",
+  "taskId": "DCME-007",
+  "project": "dalechang.me",
+  "title": "Add JIRA data to GraphQL",
+  "assignee": "Dale Chang",
+  "reporter": "Dale Chang",
+  "type": "Task",
+  "status": "FINISHED",
+  "priority": "Medium",
+  "resolution": "Fixed",
+  "description": "Recently I thought about the next things I need to do for a variety of applications and now I need to add them to the list of tasks I can display in dalechang.me",
+  "technologies": [
+    "JSON",
+    "GraphQL",
+    "JIRA"
+  ],
+  "dateCreated": "2022-02-26"
+}

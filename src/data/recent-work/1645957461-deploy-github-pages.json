@@ -1,0 +1,18 @@
+{
+  "id": "83d210e9-3d74-4689-b44a-e577ed5fb2ef",
+  "taskId": "DCME-014",
+  "project": "dalechang.me",
+  "title": "Deploy GitHub pages",
+  "assignee": "Dale Chang",
+  "reporter": "Dale Chang",
+  "type": "Task",
+  "status": "DEFINED",
+  "priority": "Medium",
+  "resolution": "Unresolved",
+  "description": "Deploying the site to GitHub Pages is an easy and free way to get webhosting. I may move the site to something else, like S3 + static hosting, but I think this will be fine for the time being.",
+  "technologies": [
+    "GitHub",
+    "Git"
+  ],
+  "dateCreated": "2022-02-26"
+}

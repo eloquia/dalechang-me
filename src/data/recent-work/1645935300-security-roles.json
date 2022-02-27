@@ -1,0 +1,21 @@
+{
+  "id": "0173a8b1-5a51-40f0-8bef-ae5379d94896",
+  "taskId": "CMP-422",
+  "project": "CMP",
+  "title": "Create dashboard component for creating/updating security roles.",
+  "assignee": "Dale Chang",
+  "reporter": "Dale Chang",
+  "type": "Feature",
+  "status": "IN PROGRESS",
+  "priority": "High",
+  "resolution": "Fixed",
+  "description": "Grouping policies into roles and assigning roles to users will make it easier for admins to understand the permissions that a person will have.",
+  "technologies": [
+    "Angular",
+    "TypeScript",
+    "Angular",
+    "Jenkins",
+    "Artifactory"
+  ],
+  "timeScheduled": "2022-01-19"
+}
