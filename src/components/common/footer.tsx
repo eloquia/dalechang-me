@@ -13,7 +13,8 @@ export default function Footer() {
     <footer>
       <div className="footer-left">
         <span id="copyright-date">© {new Date().getFullYear()}</span>
-        <ExternalLink href="https://eloquia.io" displayText="Eloquia" />
+        {/* <ExternalLink href="https://eloquia.io" displayText="Eloquia" /> */}
+        <span>Eloquia</span>
       </div>
 
       <div className="footer-right">
