@@ -22,8 +22,6 @@ const Contact = () => {
       <div className="container">
         <div className="left">
           <p id="contact-text">I would love to hear about the problems that you are trying to solve.</p>
-
-          <StaticImage src={"../../images/pensive-oil-painting.png"} alt="Always deep in thought" />
         </div>
 
         <div className="right">
