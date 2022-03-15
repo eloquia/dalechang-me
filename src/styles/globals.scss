@@ -7,6 +7,7 @@
 @use 'components/contact';
 @use 'components/recentwork';
 @use 'components/jiratask';
+@use 'components/technologies';
 
 @use 'layout/footer';
 
@@ -19,7 +20,7 @@
   Reference: https://www.koderhq.com/tutorial/sass/project-structure/
 */
 body {
-  font-family: "Roboto";
+  font-family: "Fira Code", monospace;
   background-color: #EEEEEE;
   margin: 0;
 }
@@ -28,8 +29,9 @@ section {
   padding: 2rem;
   max-width: 920px;
 }
-section:nth-child(2n) {
-  // background-color: variables.$honolulu-blue;
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
 }
 
 p {
@@ -117,7 +119,7 @@ p {
   Header
 */
 header {
-  padding: .5rem;
+  padding: 16px;
   display: flex;
   height: 48;
   justify-content: space-between;
@@ -215,7 +217,7 @@ nav div span {
 }
 .download-resume-button {
   margin: 1rem 0;
-  padding: 1rem 2rem;
+  padding: 16px 24px;
   background-color: variables.$primary_color;
   color: white;
   text-decoration: none;
@@ -261,11 +263,19 @@ button.secondary-button:hover {
 
 .work-item-md {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
 .work-item-md-reverse {
   display: flex;
   flex-direction: column;
+}
+.work-item-md-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.work-item-md-content:last-child {
+  margin-bottom: 16px;
 }
 @media screen and (min-width: 1024px) {
   .work-item-md {
@@ -277,7 +287,8 @@ button.secondary-button:hover {
     gap: 2rem;
   }
   .work-item-md-content {
-    width: 50vw;
+    gap: 16px;
+    width: 40vw;
   }
 }
 
@@ -338,7 +349,6 @@ button.secondary-button:hover {
 }
 
 .main{
-  width: 500px;
   height: 800px;
   margin-left: 40%;
   margin-right:40%;

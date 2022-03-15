@@ -24,7 +24,7 @@ const Intro = () => {
         <div id="intro-text">
           <h2>Software Engineer</h2>
           <h1>Dale Chang</h1>
-          <p>Software Engineer with 6+ years experience deploying and maintaining production applications in the cloud. I love working on all aspects of cloud-based applications, from designing to infrastructure, and from backend to frontend.</p>
+          <p>Software Engineer with 6+ years experience deploying and maintaining <strong>production applications in the cloud</strong>. I love working on all aspects of cloud-based applications, from <strong>designing</strong> to <strong>infrastructure</strong>, and from <strong>backend APIs</strong> to <strong>UI/UX</strong>.</p>
         </div>
         <div id="intro-action">
           <span className="download-resume-button" onClick={() => scrollTo("#resume")}>Download Resume</span>

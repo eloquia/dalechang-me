@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import { DateTime } from 'luxon';
 import { JiraTaskData } from '../../models/technology.models';
 import JiraTask from '../common/jira-task';
 
@@ -51,6 +50,9 @@ const RecentWorks = () => {
 
   const [searchString, setSearchString] = useState('');
   const [task, setTask] = useState<JiraTaskData>(menuItemData[0]);
+  const [currentPageNumber, setCurrentPageNumber] = useState(1);
+  const [displayedResults, setDisplayedResults] = useState([]);
+  const [pageNumbers, setPageNumbers] = useState([]);
 
   const menuItems = menuItemData
     .map((node: any) => {
@@ -60,6 +62,23 @@ const RecentWorks = () => {
       </div>
     })
 
+  const numResultsPerPage: number = 10;
+  // let pageNumbers: any[] = [];
+
+  // Only runs when the component is first mounted
+  useEffect(() => {
+    const maxPageNumber = Math.floor(menuItems.length / numResultsPerPage);
+    console.log('menuitems')
+    const pns = Array
+      .from(
+        { length: maxPageNumber },
+        (item, index) => item = index + 1
+      )
+      .map(pn => {
+        return <span>{pn}</span>
+      });
+    setPageNumbers(pns)
+  }, []);
   useEffect(() => {
     setSearchString(searchString);
   }, [searchString]);
@@ -67,10 +86,6 @@ const RecentWorks = () => {
   useEffect(() => {
     setTask(task);
   }, [task]);
-
-  const handleMenuItemSelect = (node: any) => {
-    console.log('selected', node)
-  }
 
   return (
     <section id="recent-work">
@@ -82,8 +97,14 @@ const RecentWorks = () => {
 
       <div className="recent-work-content">
         <div className="recent-work-left-menu">
-          {menuItems}
-          <div className="recent-work-pagination-controls"></div>
+          <div className="recent-work-menu-contents">
+            {menuItems}
+          </div>
+          <div className="recent-work-pagination-controls">
+            <span className="page-left">left</span>
+            {pageNumbers}
+            <span className="page-right">right</span>
+          </div>
         </div>
         <div className="jira-task-container">
           <JiraTask

@@ -25,11 +25,11 @@ export const Carousel = (
 
   return (
     <div className="carousel">
-      <FontAwesomeIcon icon={faChevronLeft} onClick={() => handleClickLeft()} />
+      <FontAwesomeIcon className="clickable" icon={faChevronLeft} onClick={() => handleClickLeft()} />
       <div className="carousel-item">
         {currentCarouselItem}
       </div>
-      <FontAwesomeIcon icon={faChevronRight} onClick={() => handleClickRight()} />
+      <FontAwesomeIcon className="clickable" icon={faChevronRight} onClick={() => handleClickRight()} />
     </div>
   )
 }

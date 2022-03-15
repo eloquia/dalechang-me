@@ -3,11 +3,13 @@ import { graphql, useStaticQuery } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import './work-simple.component.scss';
 
+const iconHeight = 32;
+
 const WorkSimple = () => {
   const {
     cobraDataQuery,
     caadsDataQuery,
-    cignaDataQuery,
+    evernorthDataQuery,
     eloquiaDataQuery,
   } = useStaticQuery(graphql`
     query WorkDataQuery {
@@ -45,7 +47,7 @@ const WorkSimple = () => {
           }
         }
       }
-      cignaDataQuery: allWorkJson(filter: {jsonId: {eq: "cigna"}}) {
+      evernorthDataQuery: allWorkJson(filter: {jsonId: {eq: "evernorth"}}) {
         edges {
           node {
             client
@@ -83,7 +85,7 @@ const WorkSimple = () => {
   `);
 
   const eloquiaData = eloquiaDataQuery.edges[0].node;
-  const cignaData = cignaDataQuery.edges[0].node;
+  const evernorthData = evernorthDataQuery.edges[0].node;
   const caadsData = caadsDataQuery.edges[0].node;
   const cobraData = cobraDataQuery.edges[0].node;
 
@@ -107,78 +109,99 @@ const WorkSimple = () => {
               <h3>Eloquia</h3>
               <p>{eloquiaData.description}</p>
             </div>
-            <div className="work-item-imageless-section">
+            {/* <div className="work-item-imageless-section">
               <h3>Responsibilities</h3>
               {eloquiaData.workItems.map((workItem: string) => <li key={workItem}>{workItem}</li>)}
-            </div>
+            </div> */}
           </div>
         </div>
 
         <div className="work-items-container">
-          <div className="work-item-metadata">
-            <div>
-              <span className="text-gray text-large">{cignaData.roleName}</span><span className="text-blue text-large"> @ {cignaData.companyName}</span>
-            </div>
-            <div>
-              <span className="text-gray">{cignaData.dateStarted} - {cignaData.dateEnded}</span>
-            </div>
-          </div>
-
           <div className="work-item-md">
             <div className="work-item-md-content">
-              <StaticImage src={"../../../../images/cigna-ui.png"} alt="Client Management Platform UI" layout="constrained" />
+              <StaticImage src={"../../../../images/cmp-ui.png"} alt="Client Management Platform UI" layout="constrained" />
             </div>
             <div className="work-item-md-content">
+              <div>
+                <span className="text-gray text-large">{evernorthData.roleName}</span><span className="text-blue text-large"> @ {evernorthData.companyName}</span>
+              </div>
+              <div>
+                <span className="text-gray">{evernorthData.dateStarted} - {evernorthData.dateEnded}</span>
+              </div>
               <h3>Client Management Platform</h3>
-              <p>{cignaData.description}</p>
-              <h3>Responsibilities</h3>
-              {cignaData.workItems.map((workItem: string) => <li key={workItem}>{workItem}</li>)}
+              <p>{evernorthData.description}</p>
+              <h4 className="technology-title">Technologies Used</h4>
+              <div className="technologies-used">
+                <StaticImage src={"../../../../images/powered-by-aws.png"} alt="Powered by AWS" height={iconHeight} />
+                <StaticImage src={"../../../../images/nodejs.svg"} alt="NodeJS Logo" height={iconHeight} />
+                <StaticImage src={"../../../../images/python.svg"} alt="Python Logo" height={iconHeight} />
+                <StaticImage src={"../../../../images/angular.svg"} alt="Angular Logo" height={iconHeight} />
+                <StaticImage src={"../../../../images/postgresql-logo.svg"} alt="PostgreSQL Logo" height={iconHeight} />
+                <StaticImage src={"../../../../images/terraform.svg"} alt="Hashicorp Terraform Logo" height={iconHeight} />
+                <StaticImage src={"../../../../images/jenkins.svg"} alt="Jenkins Logo" height={iconHeight} />
+                <StaticImage src={"../../../../images/gitlab-logo.svg"} alt="GitLab Logo" height={iconHeight} />
+                <StaticImage src={"../../../../images/docker.png"} alt="Docker Logo" height={iconHeight} />
+                <StaticImage src={"../../../../images/kubernetes.svg"} alt="Kubernetes Logo" height={iconHeight} />
+              </div>
             </div>
           </div>
         </div>
 
         <div className="work-items-container">
-          <div className="work-item-metadata">
-            <div>
-              <span className="text-gray text-large">{caadsData.roleName}</span><span className="text-blue text-large"> @ {caadsData.companyName}</span>
-            </div>
-            <div>
-              <span className="text-gray">{caadsData.dateStarted} - {caadsData.dateEnded}</span>
-            </div>
-          </div>
-
-          <div className="work-item-md-reverse">
+          <div className="work-item-md">
             <div className="work-item-md-content">
               <StaticImage src={"../../../../images/caads-ui.png"} alt="CAADS UI" layout="constrained" />
             </div>
             <div className="work-item-md-content">
+              <div>
+                <span className="text-gray text-large">{caadsData.roleName}</span><span className="text-blue text-large"> @ {caadsData.companyName}</span>
+              </div>
+              <div>
+                <span className="text-gray">{caadsData.dateStarted} - {caadsData.dateEnded}</span>
+              </div>
               <h3>Description</h3>
               <p>{caadsData.description}</p>
-              <h3>Responsibilities</h3>
-              {caadsData.workItems.map((workItem: string) => <li key={workItem}>{workItem}</li>)}
+              {/* CAADS Technologies: Java, Python, Spark, Hadoop, Solr, D3JS, Jupyter Notebook */}
+              <h4 className="technology-title">Technologies Used</h4>
+              <div className="technologies-used">
+                <StaticImage src={"../../../../images/java.png"} alt="Java" height={iconHeight} />
+                <StaticImage src={"../../../../images/python.svg"} alt="Python" height={iconHeight} />
+                <StaticImage src={"../../../../images/apache-spark.png"} alt="Apache Spark Logo" height={iconHeight} />
+                <StaticImage src={"../../../../images/apache-solr.png"} alt="Apache Solr Logo" height={iconHeight} />
+                <StaticImage src={"../../../../images/hadoop.png"} alt="Hadoop Logo" height={iconHeight} />
+                <StaticImage src={"../../../../images/d3js.svg"} alt="D3JS Logo" height={iconHeight} />
+                <StaticImage src={"../../../../images/jupyter-notebook.png"} alt="Jupyter Notebook Logo" height={iconHeight} />
+              </div>
             </div>
           </div>
         </div>
 
         <div className="work-items-container">
-          <div className="work-item-metadata">
-            <div>
-              <span className="text-gray text-large">{cobraData.roleName}</span><span className="text-blue text-large"> @ {cobraData.companyName}</span>
-            </div>
-            <div>
-              <span className="text-gray">{cobraData.dateStarted} - {cobraData.dateEnded}</span>
-            </div>
-          </div>
-
           <div className="work-item-md">
             <div className="work-item-md-content">
               <StaticImage src={"../../../../images/cobra-ui.png"} alt="COBRA UI" layout="constrained" />
             </div>
             <div className="work-item-md-content">
+              <div>
+                <span className="text-gray text-large">{cobraData.roleName}</span><span className="text-blue text-large"> @ {cobraData.companyName}</span>
+              </div>
+              <div>
+                <span className="text-gray">{cobraData.dateStarted} - {cobraData.dateEnded}</span>
+              </div>
               <h3>Description</h3>
               <p>{cobraData.description}</p>
-              <h3>Responsibilities</h3>
-              {cobraData.workItems.map((workItem: string) => <li key={workItem}>{workItem}</li>)}
+              {/* <h3>Responsibilities</h3>
+              {cobraData.workItems.map((workItem: string) => <li key={workItem}>{workItem}</li>)} */}
+              {/* COBRA Technologies: Java, Spark, Hadoop, Solr, Java Spring, Apache NiFi */}
+              <h4 className="technology-title">Technologies Used</h4>
+              <div className="technologies-used">
+                <StaticImage src={"../../../../images/java.png"} alt="Java" height={iconHeight} />
+                <StaticImage src={"../../../../images/java-spring.svg"} alt="Java Spring" height={iconHeight} />
+                <StaticImage src={"../../../../images/apache-spark.png"} alt="Apache Spark Logo" height={iconHeight} />
+                <StaticImage src={"../../../../images/apache-solr.png"} alt="Apache Solr Logo" height={iconHeight} />
+                <StaticImage src={"../../../../images/hadoop.png"} alt="Hadoop Logo" height={iconHeight} />
+                <StaticImage src={"../../../../images/apache-nifi.png"} alt="Apache NiFi Logo" height={iconHeight} />
+              </div>
             </div>
           </div>
         </div>

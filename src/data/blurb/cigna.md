@@ -1,5 +1,5 @@
 ---
-id: "cigna"
+id: "evernorth"
 section: "work"
 startDate: "Feb 2019"
 endDate: "Present"
@@ -7,7 +7,7 @@ location: "Denver, Colorado, USA & Remote"
 displayText: "DoJ @ Leidos"
 ---
 
-# Senior Software Engineering Advisor @ Cigna
+# Senior Software Engineering Advisor @ Evernorth
 
 Client Management Platform (CMP) is a cloud-based solution for helping insurers identify trends in the way their insureds make claims. With CMP insurers can filter and drill down data as well as export collections of graphs and comments as PowerPoint presentations.
 

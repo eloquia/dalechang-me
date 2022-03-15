@@ -6,7 +6,7 @@
   "dateStarted": "2016",
   "dateEnded": "2018",
   "location": "Washington DC, USA",
-  "description": "Civil Open Base for Review and Analytics (COBRA) is a big data, on premise & hybrid platform for legal review and e-discovery. Federal agencies with non-existent litigation budgets use the platform to upload, organize, and identify documents with pertinent evidence for court matters. Users read through documents to identify portions that support court case matters. Then machine learning models fine tune their prediction capabilities on these new inputs. Once the models are updated, they eliminate near duplicate documents or suggest documents of different topics to increase the robustness of the model.",
+  "description": "Civil Open Base for Review and Analytics (COBRA) is a big data, on premise & hybrid platform for legal review and e-discovery. Federal agencies with minimal litigation budgets use the platform to upload, organize, and identify documents with pertinent evidence for court matters. Users tag documents that support court case matters. Then ML models fine tune their prediction capabilities on these new inputs. Once the models are updated, they eliminate near duplicate documents to hone in on the 'smoking gun' documents.",
   "workItems": [
     "Developed ETL pipelines for batch uploads of electronic documents and images via OCR with Apache Tika",
     "Architected and lead development of an automated continuous active learning pipeline for improving supervised machine learning models in real-time",

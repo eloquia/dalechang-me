@@ -1,7 +1,7 @@
 {
   "id": "481212f9-47fc-4491-93bf-0414ff36dd82",
   "taskId": "ML-038",
-  "project": "MIND Lab",
+  "project": "MIND Lab Site",
   "title": "Move GitLab Runner",
   "assignee": "Dale Chang",
   "reporter": "Dale Chang",

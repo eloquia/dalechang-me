@@ -1,0 +1,19 @@
+{
+  "id": "",
+  "taskId": "DCME-017",
+  "project": "dalechang.me",
+  "title": "Automate creation of data boilerplate",
+  "assignee": "Dale Chang",
+  "reporter": "Dale Chang",
+  "type": "Task",
+  "status": "DEFINED",
+  "priority": "Medium",
+  "resolution": "Unresolved",
+  "description": "There is a repetitive process when creating task data. Creating task data can be automated because the data follows a consistent structure. Develop some kind of CLI to remove the copy-pasting & timestamp generation",
+  "technologies": [
+    "Docker",
+    "GitLab",
+    "CI/CD"
+  ],
+  "dateCreated": "2022-03-08"
+}

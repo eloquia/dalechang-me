@@ -7,9 +7,10 @@ import Interests from '../components/landing/interests/interests';
 import CurrentStack from '../components/landing/work/stack/current-stack.component';
 import WorkSimple from '../components/landing/work/simple/work-simple.component';
 import '../styles/globals.scss';
-import Resume from '../components/landing/resume';
+import Resume from '../components/landing/resume-focus';
 import RecentWorks from '../components/landing/recent-work';
 import Contact from '../components/landing/contact';
+import ResumeSimple from '../components/landing/resume-simple';
 
 /*
   The home page of the web application.
@@ -23,8 +24,8 @@ function IndexPage(): JSX.Element {
       <About />
       <WorkSimple />
       {/* <CurrentStack /> */}
-      <RecentWorks />
-      <Resume />
+      {/* <RecentWorks /> */}
+      <ResumeSimple />
       {/* <Interests /> */}
       {/* <Contact /> */}
     </div>

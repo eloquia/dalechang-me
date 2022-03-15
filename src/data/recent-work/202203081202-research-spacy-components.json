@@ -1,0 +1,18 @@
+{
+  "id": "",
+  "taskId": "PAS-022",
+  "project": "Professor Agrawala Site",
+  "title": "Research SpaCy components",
+  "assignee": "Dale Chang",
+  "reporter": "Dale Chang",
+  "type": "Task",
+  "status": "IN PROGRESS",
+  "priority": "Low",
+  "resolution": "Unresolved",
+  "description": "At one time, SpaCy provided a wide variety of tools for NLP and NLU. Understanding what is available would mean that I could figure out what to apply.",
+  "technologies": [
+    "Python",
+    "Jupyter"
+  ],
+  "dateCreated": "2022-03-04"
+}

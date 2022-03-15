@@ -1,6 +1,6 @@
 import { DateTime } from "luxon";
 
-export type TaskStatus = 'DEFINED' | 'RESOLVED' | 'IN PROGRESS';
+export type TaskStatus = 'BACKLOG' | 'DEFINED' | 'RESOLVED' | 'IN PROGRESS';
 export type TaskPriority = 'Low' | 'Medium' | 'High';
 export type TaskResolution = 'Unresolved' | 'Fixed';
 export type TaskType = 'Task' | 'Feature';

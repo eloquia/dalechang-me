@@ -6,9 +6,9 @@
   "assignee": "Dale Chang",
   "reporter": "Dale Chang",
   "type": "Task",
-  "status": "DEFINED",
+  "status": "RESOLVED",
   "priority": "Medium",
-  "resolution": "Unresolved",
+  "resolution": "Fixed",
   "description": "In order to deliver my website faster, I want to remove the Contact Section for now. It is an enhancement to the website and its absence does not detract from the overall goal of the website.",
   "technologies": [
     "ReactJS"

@@ -6,10 +6,13 @@
 }
 .recent-work-left-menu {
   width: 20%;
-  height: 500px;
+  height: 420px;
   overflow-y: scroll;
   background-color: white;
   border: rgb(223, 225, 229) 1px solid;
+}
+.recent-work-menu-contents {
+  // overflow-y: scroll;
 }
 .jira-task-container {
   width: 80%;
@@ -40,4 +43,18 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+/*
+  Pagination Controls
+*/
+.recent-work-pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  height: 50px;
+  background-color: rgb(223, 225, 229);
 }

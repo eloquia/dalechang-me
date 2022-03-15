@@ -19,14 +19,14 @@ export const workData: WorkData[] = [
     "takeaway": ""
   },
   {
-    "id": "cigna",
-    "companyName": "Cigna",
+    "id": "Evernorth",
+    "companyName": "Evernorth",
     "client": "Internal",
     "roleName": "Senior Software Engineering Advisor",
     "dateStarted": "Feb 2019",
     "dateEnded": "Present",
     "location": "Denver, CO, USA",
-    "description": "As a leader in the health insurance industry, Cigna ",
+    "description": "As a leader in the health insurance industry, Evernorth ",
     "workItems": [
       "Lead design and development of end-to-end features: PostgreSQL database design; REST API (Python + Flask or NodeJS); front-end (Angular 6+)",
       "Wireframed and developed reusable components in Sketch and Adobe XD with stakeholders",

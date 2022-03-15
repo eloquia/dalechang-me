@@ -1,8 +1,30 @@
+@use '../abstracts/variables';
+
 #resume {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 32px;
 }
+
+#resume-content {
+  margin-left: 60vw;
+  width: 30%;
+}
+
+#resume-text {
+  display: none;
+  visibility: hidden;
+}
+@media(min-width: 426px) {
+  #resume-text {
+    display: initial;
+    visibility: visible;
+  }
+}
+
+// #resume-resume-button {
+  
+// }
 
 .resume-button-container {
   display: flex;

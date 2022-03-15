@@ -1,0 +1,19 @@
+{
+  "id": "",
+  "taskId": "DCME-020",
+  "project": "dalechang.me",
+  "title": "Migrate Task Data",
+  "assignee": "Dale Chang",
+  "reporter": "Dale Chang",
+  "type": "Task",
+  "status": "DEFINED",
+  "priority": "Low",
+  "resolution": "Unresolved",
+  "description": "Eventually it would be nice to put this data in a database, accessible by REST API, and have a corresponding frontend component. This would be the first step to doing so.",
+  "technologies": [
+    "Docker",
+    "GitLab",
+    "CI/CD"
+  ],
+  "dateCreated": "2022-03-08"
+}

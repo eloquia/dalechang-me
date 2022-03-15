@@ -1,0 +1,37 @@
+[
+  {
+    "propertyName": "task",
+    "options": [
+      "Task",
+      "Feature"
+    ],
+    "default": "Task"
+  },
+  {
+    "propertyName": "status",
+    "options": [
+      "BACKLOG",
+      "DEFINED",
+      "IN PROGRESS",
+      "RESOLVED"
+    ],
+    "default": "BACKLOG"
+  },
+  {
+    "propertyName": "priority",
+    "options": [
+      "Low",
+      "Medium",
+      "High"
+    ],
+    "default": "Loq"
+  },
+  {
+    "propertyName": "resolution",
+    "options": [
+      "Unresolved",
+      "Fixed"
+    ],
+    "default": "Unresolved"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "id": "",
+  "taskId": "PAS-21",
+  "project": "Professor Agrawala Site",
+  "title": "Run K-Means Clustering on Publication Abstracts",
+  "assignee": "Dale Chang",
+  "reporter": "Dale Chang",
+  "type": "Task",
+  "status": "BACKLOG",
+  "priority": "Medium",
+  "resolution": "Unresolved",
+  "description": "From the perspective of someone who is not involved with computer science research, it can be cognitively difficult to categorize the research of Professor Agrawala and where it fits in with the broader computer science knowledge base. By using an algorithm to group similar abstracts, I can reduce the burden of reading and attempting to understand everything.",
+  "technologies": [
+    "Python",
+    "Jupyter",
+    "Sci-kit Learn",
+    "Numpy"
+  ],
+  "dateCreated": "2022-03-08"
+}

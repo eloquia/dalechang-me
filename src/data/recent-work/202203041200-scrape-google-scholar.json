@@ -1,0 +1,19 @@
+{
+  "id": "",
+  "taskId": "PAS-020",
+  "project": "Professor Agrawala Site",
+  "title": "Scrape Google Scholar for Abstracts and Categories",
+  "assignee": "Dale Chang",
+  "reporter": "Dale Chang",
+  "type": "Task",
+  "status": "IN PROGRESS",
+  "priority": "Medium",
+  "resolution": "Unresolved",
+  "description": "Professor Agrawala published a lot of papers throughout his career. This makes it difficult to understand his contributions from the perspective of a site visitor. By gathering data about his publications, we can get a better idea of his contributions to the academic literature.",
+  "technologies": [
+    "Python",
+    "Jupyter",
+    "Beautiful Soup"
+  ],
+  "dateCreated": "2022-03-04"
+}

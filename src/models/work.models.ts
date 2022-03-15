@@ -12,6 +12,8 @@ export interface WorkData {
   description: string;
   workItems: string[];
   takeaway?: string;
+  keyActivities?: string[];
+  accomplishments?: string[];
 }
 
 export interface WorkControlsArray {

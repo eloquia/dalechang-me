@@ -1,6 +1,6 @@
 {
-  "id": "cigna",
-  "companyName": "Cigna",
+  "id": "evernorth",
+  "companyName": "Evernorth",
   "client": "Internal",
   "roleName": "Senior Software Engineering Advisor",
   "dateStarted": "2019",
@@ -11,6 +11,18 @@
     "Lead design and development of end-to-end features: database design (RDS, Postgres, S3; REST API (API Gateway, Lambda, Python, & NodeJS); front-end (Angular 11+).",
     "Improved team output by 25% by teaching junior members of the team parts of the stack.",
     "Developed Jenkins CI/CD pipelines for continuous integration and automated deployments."
+  ],
+  "keyActivities": [
+    "Planned Features and Stories, in JIRA using Agile SDLC.",
+    "Provisioned AWS infrastructure with Terraform.",
+    "Designed database tables and enhanced query performance in AWS RDS + PostgreSQL.",
+    "Developed business logic in NodeJS, TypeScript, ExpressJS on AWS Lambda + API Gateway.",
+    "Created UI/UX components and workflows in Sketch and developed customer experiences in Angular 11+."
+  ],
+  "accomplishments": [
+    "Refactored legacy monolithic applications into microservices, resulting in 1000x in performance improvements.",
+    "Scaled frontend applications in Kubernetes, handling thousands of concurrent users in production.",
+    "Secured customer data and user operations by developing a security system based on user's permissions."
   ],
   "takeaway": ""
 }

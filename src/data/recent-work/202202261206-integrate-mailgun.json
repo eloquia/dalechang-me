@@ -1,8 +1,8 @@
 {
   "id": "49b501ec-6ed7-4231-b5f4-55a0df408de5",
-  "taskId": "Integrate Mailgun",
-  "project": "DCME-016",
-  "title": "dalechang.me",
+  "taskId": "DCME-016",
+  "project": "dalechang.me",
+  "title": "Integrate Mailgun",
   "assignee": "Dale Chang",
   "reporter": "Dale Chang",
   "type": "Task",
