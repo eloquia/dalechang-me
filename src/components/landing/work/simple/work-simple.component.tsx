@@ -119,9 +119,6 @@ const WorkSimple = () => {
         <div className="work-items-container">
           <div className="work-item-md">
             <div className="work-item-md-content">
-              <StaticImage src={"../../../../images/cmp-ui.png"} alt="Client Management Platform UI" layout="constrained" />
-            </div>
-            <div className="work-item-md-content">
               <div>
                 <span className="text-gray text-large">{evernorthData.roleName}</span><span className="text-blue text-large"> @ {evernorthData.companyName}</span>
               </div>
@@ -144,14 +141,15 @@ const WorkSimple = () => {
                 <StaticImage src={"../../../../images/kubernetes.svg"} alt="Kubernetes Logo" height={iconHeight} />
               </div>
             </div>
+            <div className="work-item-md-content">
+              <StaticImage src={"../../../../images/cmp-ui.png"} alt="Client Management Platform UI" layout="constrained" />
+              <span className="text-sm"><em>Sample CMP dashboard</em></span>
+            </div>
           </div>
         </div>
 
         <div className="work-items-container">
           <div className="work-item-md">
-            <div className="work-item-md-content">
-              <StaticImage src={"../../../../images/caads-ui.png"} alt="CAADS UI" layout="constrained" />
-            </div>
             <div className="work-item-md-content">
               <div>
                 <span className="text-gray text-large">{caadsData.roleName}</span><span className="text-blue text-large"> @ {caadsData.companyName}</span>
@@ -173,14 +171,15 @@ const WorkSimple = () => {
                 <StaticImage src={"../../../../images/jupyter-notebook.png"} alt="Jupyter Notebook Logo" height={iconHeight} />
               </div>
             </div>
+            <div className="work-item-md-content">
+              <StaticImage src={"../../../../images/caads-ui.png"} alt="CAADS UI" layout="constrained" />
+              <span className="text-sm"><em>Sample CAADS dashboard</em></span>
+            </div>
           </div>
         </div>
 
         <div className="work-items-container">
           <div className="work-item-md">
-            <div className="work-item-md-content">
-              <StaticImage src={"../../../../images/cobra-ui.png"} alt="COBRA UI" layout="constrained" />
-            </div>
             <div className="work-item-md-content">
               <div>
                 <span className="text-gray text-large">{cobraData.roleName}</span><span className="text-blue text-large"> @ {cobraData.companyName}</span>
@@ -190,8 +189,6 @@ const WorkSimple = () => {
               </div>
               <h3>Description</h3>
               <p>{cobraData.description}</p>
-              {/* <h3>Responsibilities</h3>
-              {cobraData.workItems.map((workItem: string) => <li key={workItem}>{workItem}</li>)} */}
               {/* COBRA Technologies: Java, Spark, Hadoop, Solr, Java Spring, Apache NiFi */}
               <h4 className="technology-title">Technologies Used</h4>
               <div className="technologies-used">
@@ -202,6 +199,10 @@ const WorkSimple = () => {
                 <StaticImage src={"../../../../images/hadoop.png"} alt="Hadoop Logo" height={iconHeight} />
                 <StaticImage src={"../../../../images/apache-nifi.png"} alt="Apache NiFi Logo" height={iconHeight} />
               </div>
+            </div>
+            <div className="work-item-md-content">
+              <StaticImage src={"../../../../images/cobra-ui.png"} alt="COBRA UI" layout="constrained" />
+              <span className="text-sm"><em>Sample COBRA document view & tag interface</em></span>
             </div>
           </div>
         </div>

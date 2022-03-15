@@ -263,7 +263,8 @@ button.secondary-button:hover {
 
 .work-item-md {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
+  gap: 16px;
 }
 .work-item-md-reverse {
   display: flex;
