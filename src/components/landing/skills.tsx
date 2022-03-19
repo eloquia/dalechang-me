@@ -43,9 +43,9 @@ const Skills = () => {
   });
 
   return (
-    <section id="skills">
+    <div id="skills" className="content">
       {skillsChildren}
-    </section>
+    </div>
   )
 }
 

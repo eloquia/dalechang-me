@@ -3,18 +3,17 @@ import React from 'react';
 import GitHub from '../external/github';
 import LinkedIn from '../external/linkedin';
 import { SquareIconProps } from '../external/models';
-import ExternalLink from './externalLink';
 
 export default function Footer() {
   const squareIconProps: SquareIconProps = {
     dimension: 20,
   };
   return (
-    <footer>
+    <footer className="bg-zinc-800">
       <div className="footer-left">
-        <span id="copyright-date">© {new Date().getFullYear()}</span>
+        <span id="copyright-date" className="text-slate-100">© {new Date().getFullYear()}</span>
         {/* <ExternalLink href="https://eloquia.io" displayText="Eloquia" /> */}
-        <span>Eloquia</span>
+        <span className="text-slate-100">Eloquia</span>
       </div>
 
       <div className="footer-right">

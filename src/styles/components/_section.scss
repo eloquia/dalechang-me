@@ -1,0 +1,31 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+@media screen and (min-width: 640px) {
+  .content {
+    flex-direction: row;
+  }
+}
+
+.titled-section {
+  width: min(90vw, 900px); 
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.titled-section-narrow {
+  width: min(90vw, 600px); 
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.content-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}

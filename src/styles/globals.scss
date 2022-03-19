@@ -2,6 +2,9 @@
 
 @use 'base/normalize';
 
+@use 'components/section';
+@use 'components/intro';
+@use 'components/work';
 @use 'components/about';
 @use 'components/resume';
 @use 'components/contact';
@@ -20,14 +23,9 @@
   Reference: https://www.koderhq.com/tutorial/sass/project-structure/
 */
 body {
-  font-family: "Fira Code", monospace;
+  font-family: "DejaVu Mono", monospace;
   background-color: #EEEEEE;
   margin: 0;
-}
-
-section {
-  padding: 2rem;
-  max-width: 920px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -57,6 +55,9 @@ p {
 .text-large {
   font-size: 1.25rem;
 }
+.no-underline {
+  text-decoration-line: none;
+}
 .clickable {
   cursor: pointer;
 }
@@ -64,11 +65,76 @@ p {
   visibility: hidden;
 }
 
+.border-radius-4 {
+  border-radius: 16px;
+}
+
+.py-4 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.px-6 {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.bg-claret {
+  background-color: variables.$claret;
+}
+
+.text-slate-100 {
+  color: variables.$slate-100;
+}
+
+.bg-zinc-800 {
+  background-color: variables.$zinc-800;
+}
+
+.bg-sky-50 {
+  background-color: variables.$sky-50;
+}
+.bg-sky-100 {
+  background-color: variables.$sky-100;
+}
+.bg-sky-200 {
+  background-color: variables.$sky-200;
+}
+.bg-sky-300 {
+  background-color: variables.$sky-300;
+}
+.bg-sky-400 {
+  background-color: variables.$sky-400;
+}
+.bg-sky-500 {
+  background-color: variables.$sky-500;
+}
+.bg-sky-600 {
+  background-color: variables.$sky-600;
+}
+.bg-sky-700 {
+  background-color: variables.$sky-700;
+}
+.bg-sky-800 {
+  background-color: variables.$sky-800;
+}
+.bg-sky-900 {
+  background-color: variables.$sky-900;
+}
+.text-sky-500 {
+  color: variables.$sky-500;
+}
+.text-sky-600 {
+  color: variables.$sky-600;
+}
+
 .emphasis {
   color: variables.$honolulu-blue;
 }
 
-.w-50 {
+.w-40 {
+  width: 10rem; /* 160px */
+}
+.w-50p {
   width: 50%;
 }
 
@@ -78,6 +144,13 @@ p {
 
 .two-cols {
   column-count: 2;
+}
+
+/*
+  Flex
+*/
+.self-center {
+  align-self: center;
 }
 
 #main-content {
@@ -123,7 +196,8 @@ header {
   display: flex;
   height: 48;
   justify-content: space-between;
-  box-shadow: 0 2px 2px variables.$something-is-off-white;
+  box-shadow: 0 2px 2px variables.$sky-50;
+  background-color: variables.$sky-50;
 }
 header div {
   display: flex;
@@ -156,75 +230,8 @@ nav div span {
   text-decoration: underline;
 }
 
-/*
-  Intro Section
-*/
-#intro {
-  padding: 4rem 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 4rem;
-}
-@media screen and (min-width: 640px) {
-  #intro {
-    flex-direction: row;
-    align-items: center;
-  }
-}
-
-#profile-image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@media screen and (min-width: 640px) {
-  #intro-image-container {
-    width: 50%;
-  }
-}
-
-@media screen and (min-width: 640px) {
-  #intro-content {
-    width: 50%;
-  }
-}
-#intro-text {
-  color: variables.$coal;
-  height: 100%;
-  text-align: center;
-  padding: 0 1rem;
-}
-@media screen and (min-width: 640px) {
-  #intro-text {
-    text-align: left;
-  }
-}
-#intro-text h2 {
-  font-size: 1rem;
-  font-weight: 300;
-  color: variables.$coal;
-}
-#intro-text p {
-  margin: 1rem 0;
-}
-
-#intro-action {
-  margin: 2rem 0;
-  display: flex;
-  justify-content: center;
-}
-.download-resume-button {
-  margin: 1rem 0;
-  padding: 16px 24px;
-  background-color: variables.$primary_color;
-  color: white;
-  text-decoration: none;
-  border-radius: 1rem;
-}
-.download-resume-button:hover {
-  background-color: variables.$naaavy-beans;
+.section-half {
+  max-width: 300px;
 }
 
 button.secondary-button {
@@ -241,105 +248,6 @@ button.secondary-button:hover {
 }
 
 /*
-  Work
-*/
-.work-header {
-  display: flex;
-}
-.work-simple {
-  display: flex;
-  flex-direction: column;
-}
-.work-simple-content {
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-}
-.work-items-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.work-item-md {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-.work-item-md-reverse {
-  display: flex;
-  flex-direction: column;
-}
-.work-item-md-content {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-.work-item-md-content:last-child {
-  margin-bottom: 16px;
-}
-@media screen and (min-width: 1024px) {
-  .work-item-md {
-    flex-direction: row;
-    gap: 2rem;
-  }
-  .work-item-md-reverse {
-    flex-direction: row-reverse;
-    gap: 2rem;
-  }
-  .work-item-md-content {
-    gap: 16px;
-    width: 40vw;
-  }
-}
-
-.work-item-imageless {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-@media screen and (min-width: 426px) {
-  .work-item-imageless {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-/*
-  Work Item
-*/
-.work-simple-item {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-@media screen and (min-width: 426px) {
-  .work-simple-item {
-    flex-direction: row;
-  }
-}
-
-.work-item-meta {
-  padding: 2rem;
-  background-color: variables.$something-is-off-white;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.work-item-metadata {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.work-item-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-}
-
-/*
   Current Stack
 */
 .current-stack-item {
@@ -349,7 +257,7 @@ button.secondary-button:hover {
   box-shadow: 0 2px 2px variables.$something-is-off-white;
 }
 
-.main{
+.main {
   height: 800px;
   margin-left: 40%;
   margin-right:40%;

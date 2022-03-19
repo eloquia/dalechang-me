@@ -5,6 +5,6 @@
  */
 
 import "./src/styles/globals.scss"
-import "@fontsource/open-sans" // Defaults to weight 400 with all styles included.
+import "@fontsource/dejavu-mono" // Defaults to weight 400 with all styles included.
 
 export const onServiceWorkerUpdateReady = () => window.location.reload(true);
