@@ -1,8 +1,10 @@
 # Dale Chang's Website
 
+[![GitHub Actions Demo](https://github.com/eloquia/dalechang-me/actions/workflows/github-actions-demo.yml/badge.svg)](https://github.com/eloquia/dalechang-me/actions/workflows/github-actions-demo.yml)
+
 This is the source code for Dale Chang's website.
 
-## Tech Stack
+## Tech **Stack**
 
 Describes the overarching technical details of the project
 
