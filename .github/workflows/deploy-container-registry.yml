@@ -38,9 +38,16 @@ jobs:
         with:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
-      - name: Docker Registry
-        run: docker login -u $USERNAME -p $ACCESS_TOKEN
-      - name: Build Docker image
-        run: docker build --no-cache -t $CONTAINER_REGISTRY/$REPOSITORY:latest
-      - name: Push Container to Registry
-        run: docker push $CONTAINER_REGISTRY/$GITHUB_REPOSITORY
+
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ secrets.CONTAINER_REGISTRY_USERNAME }}
+          password: ${{ secrets.ACCESS_TOKEN }}
+
+      - name: Build and Publish
+        run: |
+          docker build . --tag ghcr.io/eloquia/dalechang.dev:latest
+          docker run ghcr.io/eloquia/dalechang.dev:latest
+          docker push ghcr.io/eloquia/dalechang.dev:latest
