@@ -11,6 +11,8 @@ RUN npm install --ignore-platform && npm run build
 # Stage 2: nginx stage to serve frontend assets
 # nginx state for serving content
 FROM nginx:alpine
+# Add label to link GitHub Container Package with account Package
+LABEL org.opencontainers.image.source="https://github.com/eloquia/dalechang-me"
 # Set working directory to nginx asset directory
 WORKDIR /usr/share/nginx/html
 # Remove default nginx static assets
