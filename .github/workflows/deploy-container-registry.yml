@@ -49,5 +49,4 @@ jobs:
       - name: Build and Publish
         run: |
           docker build . --tag ghcr.io/eloquia/dalechang.dev:latest
-          docker run ghcr.io/eloquia/dalechang.dev:latest
           docker push ghcr.io/eloquia/dalechang.dev:latest
