@@ -1,20 +1,6 @@
 import React from 'react';
-import { useStaticQuery, graphql } from "gatsby";
 
 const Resume = () => {
-  const pdfQuery = useStaticQuery(graphql`
-    query ResumeSimpleQuery {
-      allFile(filter: {extension: {eq: "pdf"}}) {
-        edges {
-          node {
-            name
-            publicURL
-          }
-        }
-      }
-    }
-  `);
-
   return (
     <div id="resume">
       <div className="titled-section-narrow">
