@@ -42,20 +42,20 @@ const Evernorth = () => {
       <p>{evernorthData.description}</p>
       <h4 className="technology-title">Technologies Used</h4>
       <div className="technologies-used">
-        <StaticImage src={"http://cdn-dalechang-dev.sfo3.digitaloceanspaces.com/powered-by-aws.png"} alt="Powered by AWS" height={iconHeight} />
-        <StaticImage src={"http://cdn-dalechang-dev.sfo3.digitaloceanspaces.com/nodejs.png"} alt="NodeJS Logo" height={iconHeight} />
-        <StaticImage src={"http://cdn-dalechang-dev.sfo3.digitaloceanspaces.com/python.png"} alt="Python Logo" height={iconHeight} />
-        <StaticImage src={"http://cdn-dalechang-dev.sfo3.digitaloceanspaces.com/angular.png"} alt="Angular Logo" height={iconHeight} />
-        <StaticImage src={"http://cdn-dalechang-dev.sfo3.digitaloceanspaces.com/postgresql.png"} alt="PostgreSQL Logo" height={iconHeight} />
-        <StaticImage src={"http://cdn-dalechang-dev.sfo3.digitaloceanspaces.com/terraform.png"} alt="Hashicorp Terraform Logo" height={iconHeight} />
-        <StaticImage src={"http://cdn-dalechang-dev.sfo3.digitaloceanspaces.com/jenkins.png"} alt="Jenkins Logo" height={iconHeight} />
-        <StaticImage src={"http://cdn-dalechang-dev.sfo3.digitaloceanspaces.com/gitlab.png"} alt="GitLab Logo" height={iconHeight} />
-        <StaticImage src={"http://cdn-dalechang-dev.sfo3.digitaloceanspaces.com/docker.png"} alt="Docker Logo" height={iconHeight} />
-        <StaticImage src={"http://cdn-dalechang-dev.sfo3.digitaloceanspaces.com/kubernetes.png"} alt="Kubernetes Logo" height={iconHeight} />
+        <StaticImage src={"../../../images/powered-by-aws.png"} alt="Powered by AWS" height={iconHeight} />
+        <StaticImage src={"../../../images/nodejs.png"} alt="NodeJS Logo" height={iconHeight} />
+        <StaticImage src={"../../../images/python.png"} alt="Python Logo" height={iconHeight} />
+        <StaticImage src={"../../../images/angular.png"} alt="Angular Logo" height={iconHeight} />
+        <StaticImage src={"../../../images/postgresql.png"} alt="PostgreSQL Logo" height={iconHeight} />
+        <StaticImage src={"../../../images/terraform.png"} alt="Hashicorp Terraform Logo" height={iconHeight} />
+        <StaticImage src={"../../../images/jenkins.png"} alt="Jenkins Logo" height={iconHeight} />
+        <StaticImage src={"../../../images/gitlab.png"} alt="GitLab Logo" height={iconHeight} />
+        <StaticImage src={"../../../images/docker.png"} alt="Docker Logo" height={iconHeight} />
+        <StaticImage src={"../../../images/kubernetes.png"} alt="Kubernetes Logo" height={iconHeight} />
       </div>
     </div>
     <div className="work-item-md-content">
-      <StaticImage src={"http://cdn-dalechang-dev.sfo3.digitaloceanspaces.com/cmp-ui.png"} alt="Client Management Platform UI" layout="constrained" />
+      <StaticImage src={"../../../images/cmp-ui.png"} alt="Client Management Platform UI" layout="constrained" />
       <span className="text-sm"><em>Sample CMP dashboard</em></span>
     </div>
   </div>]

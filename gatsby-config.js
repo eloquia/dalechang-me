@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 module.exports = {
   siteMetadata: {
     title: `Dale Chang | Software Engineer`,
@@ -116,5 +118,11 @@ module.exports = {
     },
     `gatsby-plugin-sass`,
     `gatsby-plugin-smoothscroll`,
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: process.env.S3_BUCKET_NAME,
+      },
+    },
   ]
 };

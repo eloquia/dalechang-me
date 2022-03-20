@@ -10,7 +10,7 @@ const JiraTask = (taskData: JiraTaskData) => {
   return (
     <div className="jira-task">
       <div className="jira-task-header">
-        <StaticImage src={"../../images/project-avatar.svg"} alt="Project image" width={64} height={64} />
+        {/* <StaticImage src={"../../images/project-avatar.svg"} alt="Project image" width={64} height={64} /> */}
         <div className="jira-task-header-main">
           <ul className="jira-task-header-items">
             <li className="jira-task-header-item">{taskData.project}</li>
