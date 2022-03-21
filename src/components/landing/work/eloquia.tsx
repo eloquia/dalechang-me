@@ -18,7 +18,6 @@ const Eloquia = () => {
             location
             roleName
             takeaway
-            workItems
           }
         }
       }

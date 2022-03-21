@@ -21,7 +21,6 @@ const Evernorth = () => {
             location
             roleName
             takeaway
-            workItems
           }
         }
       }
@@ -42,20 +41,20 @@ const Evernorth = () => {
       <p>{evernorthData.description}</p>
       <h4 className="technology-title">Technologies Used</h4>
       <div className="technologies-used">
-        <StaticImage src={"../../../images/powered-by-aws.png"} alt="Powered by AWS" height={iconHeight} />
-        <StaticImage src={"../../../images/nodejs.png"} alt="NodeJS Logo" height={iconHeight} />
-        <StaticImage src={"../../../images/python.png"} alt="Python Logo" height={iconHeight} />
-        <StaticImage src={"../../../images/angular.png"} alt="Angular Logo" height={iconHeight} />
-        <StaticImage src={"../../../images/postgresql.png"} alt="PostgreSQL Logo" height={iconHeight} />
-        <StaticImage src={"../../../images/terraform.png"} alt="Hashicorp Terraform Logo" height={iconHeight} />
-        <StaticImage src={"../../../images/jenkins.png"} alt="Jenkins Logo" height={iconHeight} />
-        <StaticImage src={"../../../images/gitlab.png"} alt="GitLab Logo" height={iconHeight} />
-        <StaticImage src={"../../../images/docker.png"} alt="Docker Logo" height={iconHeight} />
-        <StaticImage src={"../../../images/kubernetes.png"} alt="Kubernetes Logo" height={iconHeight} />
+        <StaticImage src={"https://dalechangdev.s3.us-west-1.amazonaws.com/powered-by-aws.png"} alt="Powered by AWS" height={iconHeight} />
+        <StaticImage src={"https://dalechangdev.s3.us-west-1.amazonaws.com/nodejs.png"} alt="NodeJS Logo" height={iconHeight} />
+        <StaticImage src={"https://dalechangdev.s3.us-west-1.amazonaws.com/python.png"} alt="Python Logo" height={iconHeight} />
+        <StaticImage src={"https://dalechangdev.s3.us-west-1.amazonaws.com/angular.png"} alt="Angular Logo" height={iconHeight} />
+        <StaticImage src={"https://dalechangdev.s3.us-west-1.amazonaws.com/postgresql.png"} alt="PostgreSQL Logo" height={iconHeight} />
+        <StaticImage src={"https://dalechangdev.s3.us-west-1.amazonaws.com/terraform.png"} alt="Hashicorp Terraform Logo" height={iconHeight} />
+        <StaticImage src={"https://dalechangdev.s3.us-west-1.amazonaws.com/jenkins.png"} alt="Jenkins Logo" height={iconHeight} />
+        <StaticImage src={"https://dalechangdev.s3.us-west-1.amazonaws.com/gitlab.png"} alt="GitLab Logo" height={iconHeight} />
+        <StaticImage src={"https://dalechangdev.s3.us-west-1.amazonaws.com/docker.png"} alt="Docker Logo" height={iconHeight} />
+        <StaticImage src={"https://dalechangdev.s3.us-west-1.amazonaws.com/kubernetes.png"} alt="Kubernetes Logo" height={iconHeight} />
       </div>
     </div>
     <div className="work-item-md-content">
-      <StaticImage src={"../../../images/cmp-ui.png"} alt="Client Management Platform UI" layout="constrained" />
+      <StaticImage src={"https://dalechangdev.s3.us-west-1.amazonaws.com/cmp-ui.png"} alt="Client Management Platform UI" layout="constrained" />
       <span className="text-sm"><em>Sample CMP dashboard</em></span>
     </div>
   </div>]
